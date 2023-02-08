@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d303b290ca7608043ac9200c34a0ce19
+guid: de21adbed5f578346a85246561fd5975
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 50
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -114,6 +114,18 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -129,127 +141,169 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Attack2_0
+      name: sprite_snappaKappa_strip8_0
       rect:
         serializedVersion: 2
-        x: 84
-        y: 78
-        width: 48
-        height: 63
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e138d333fea146d4dba57454f69bda65
-      internalID: 427568423
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack2_1
-      rect:
-        serializedVersion: 2
-        x: 282
-        y: 78
-        width: 48
-        height: 63
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7c8584fde42b3594d9c0bb3256937347
-      internalID: 1022841145
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack2_2
-      rect:
-        serializedVersion: 2
-        x: 484
-        y: 78
-        width: 48
-        height: 63
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6f3ecc0c15f9afa4e8647cfe9765703e
-      internalID: 1261846640
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack2_3
-      rect:
-        serializedVersion: 2
-        x: 686
-        y: 78
-        width: 48
-        height: 63
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f4e8b2df21e0c434981c65f4c8c116f1
-      internalID: 529760712
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack2_4
-      rect:
-        serializedVersion: 2
-        x: 885
-        y: 78
-        width: 109
+        x: 0
+        y: 0
+        width: 64
         height: 53
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e28de4e970445954cbca09521d7227cf
-      internalID: -1145002756
+      spriteID: 034b1ef2ece74d343b17d80ee49910cb
+      internalID: 2024071903
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack2_5
+      name: sprite_snappaKappa_strip8_1
       rect:
         serializedVersion: 2
-        x: 1085
-        y: 78
-        width: 105
-        height: 47
+        x: 65
+        y: 0
+        width: 63
+        height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 84693bef8cdebb845848d05cf5c5d01c
-      internalID: -1911287554
+      spriteID: 5cd597a18ef63f549a2f8fff809b2ed4
+      internalID: -285465532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_snappaKappa_strip8_2
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 0
+        width: 62
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 971a3d40b645ce841a9b93b9068b9c6d
+      internalID: -33083637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_snappaKappa_strip8_3
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 0
+        width: 60
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ba3a7ecc661e6743bc75c33e99ed252
+      internalID: -742203429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_snappaKappa_strip8_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 64
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbfa4721fafce3a44adbe96465defcec
+      internalID: -1998990511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_snappaKappa_strip8_5
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 0
+        width: 63
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c691eca086ec4e448b032ae12889fa23
+      internalID: 940728334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_snappaKappa_strip8_6
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 0
+        width: 62
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f4f86ea40843884a87a181bd295a2eb
+      internalID: 378409618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_snappaKappa_strip8_7
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 0
+        width: 61
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ede05b7adfa2954497e7450bddf7958
+      internalID: -883898947
       vertices: []
       indices: 
       edges: []
@@ -265,12 +319,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Attack2_5: -1911287554
-      Attack2_4: -1145002756
-      Attack2_2: 1261846640
-      Attack2_1: 1022841145
-      Attack2_3: 529760712
-      Attack2_0: 427568423
+      sprite_snappaKappa_strip8_2: -33083637
+      sprite_snappaKappa_strip8_0: 2024071903
+      sprite_snappaKappa_strip8_5: 940728334
+      sprite_snappaKappa_strip8_7: -883898947
+      sprite_snappaKappa_strip8_1: -285465532
+      sprite_snappaKappa_strip8_3: -742203429
+      sprite_snappaKappa_strip8_6: 378409618
+      sprite_snappaKappa_strip8_4: -1998990511
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

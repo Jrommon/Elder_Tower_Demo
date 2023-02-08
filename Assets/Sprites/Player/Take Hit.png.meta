@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a7257468a2e04f042a1892dba83f3d62
+guid: fac794f0df6788b42b240c07cb5cda64
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 50
+  spritePixelsToUnits: 40
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -129,13 +129,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Run_0
+      name: Take Hit_0
       rect:
         serializedVersion: 2
-        x: 72
-        y: 79
-        width: 46
-        height: 47
+        x: 76
+        y: 78
+        width: 37
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,20 +143,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b38d7a0490aceed4cac9acbd80a1b5a5
-      internalID: -512483294
+      spriteID: 8ae4f320c1d54e54c8870d8ddcca150f
+      internalID: 175859877
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run_1
+      name: Take Hit_1
       rect:
         serializedVersion: 2
-        x: 272
+        x: 266
         y: 78
-        width: 46
-        height: 47
+        width: 48
+        height: 54
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -164,20 +164,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c07d364ebd4c774d8c40507ede94ce9
-      internalID: 271942476
+      spriteID: 206702dc5ce0eca4ca087a49f6525f03
+      internalID: 959124892
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run_2
+      name: Take Hit_2
       rect:
         serializedVersion: 2
-        x: 472
+        x: 470
         y: 78
-        width: 46
-        height: 47
+        width: 42
+        height: 53
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -185,20 +185,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f601b834c026ff74e944e81e21ad81e6
-      internalID: 974723531
+      spriteID: 0f0c08a9efdbd1b4291b08865fe625e2
+      internalID: 55725153
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run_3
+      name: Take Hit_3
       rect:
         serializedVersion: 2
-        x: 672
+        x: 670
         y: 78
-        width: 46
-        height: 48
+        width: 42
+        height: 53
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -206,92 +206,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f3b8d2e4bc3d3a34bb64167cf6003973
-      internalID: -1355737176
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Run_4
-      rect:
-        serializedVersion: 2
-        x: 872
-        y: 78
-        width: 46
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bd3270001d30f974f93217f7ad0e3e8e
-      internalID: 1741899791
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Run_5
-      rect:
-        serializedVersion: 2
-        x: 1072
-        y: 78
-        width: 46
-        height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4117554d2f76303479e1732bc934b6c4
-      internalID: 753443017
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Run_6
-      rect:
-        serializedVersion: 2
-        x: 1272
-        y: 78
-        width: 46
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 411f8017e9c2d484f90a830fc3c7d89b
-      internalID: -1307745963
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Run_7
-      rect:
-        serializedVersion: 2
-        x: 1472
-        y: 78
-        width: 46
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2157d3d54dce1484bb36989fafbb541a
-      internalID: -493780605
+      spriteID: 0e38d50d5ab4fb046b22565494c89a94
+      internalID: 1486537986
       vertices: []
       indices: 
       edges: []
@@ -307,14 +223,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Run_6: -1307745963
-      Run_2: 974723531
-      Run_1: 271942476
-      Run_3: -1355737176
-      Run_7: -493780605
-      Run_4: 1741899791
-      Run_0: -512483294
-      Run_5: 753443017
+      Take Hit_2: 55725153
+      Take Hit_1: 959124892
+      Take Hit_0: 175859877
+      Take Hit_3: 1486537986
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

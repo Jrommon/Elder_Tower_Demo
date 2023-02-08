@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a19924ae60d4e48409889dca02c0cbf9
+guid: 7eb6fdb25ecc6e34db11fb1cd87290b0
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 50
+  spritePixelsToUnits: 60
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -129,13 +129,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Idle_0
+      name: Tortilla de papas_0
       rect:
         serializedVersion: 2
-        x: 76
-        y: 78
-        width: 37
-        height: 52
+        x: 63
+        y: 83
+        width: 24
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,155 +143,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 25fbca83ae2a2ff4e9369521b0cb9969
-      internalID: -1860378675
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Idle_1
-      rect:
-        serializedVersion: 2
-        x: 276
-        y: 78
-        width: 37
-        height: 51
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 12bb9a6f32b6319458d8a2fa9940f6a9
-      internalID: -1449034098
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Idle_2
-      rect:
-        serializedVersion: 2
-        x: 476
-        y: 78
-        width: 37
-        height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 241083d7c07cc654bb87e72d597d1317
-      internalID: -1527064652
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Idle_3
-      rect:
-        serializedVersion: 2
-        x: 676
-        y: 78
-        width: 37
-        height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 92635d82322fcd44ab1a8d09bb1793ab
-      internalID: -1418270449
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Idle_4
-      rect:
-        serializedVersion: 2
-        x: 876
-        y: 78
-        width: 37
-        height: 49
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4bcb76a2f7a9b0e42959775109cb8549
-      internalID: -1026086599
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Idle_5
-      rect:
-        serializedVersion: 2
-        x: 1076
-        y: 78
-        width: 37
-        height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bd3ecb1505b239d48a7585b02e6fe256
-      internalID: -1927780147
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Idle_6
-      rect:
-        serializedVersion: 2
-        x: 1276
-        y: 78
-        width: 37
-        height: 51
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9e58c755a4bfc314193eb30319c74cf5
-      internalID: 1248551691
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Idle_7
-      rect:
-        serializedVersion: 2
-        x: 1476
-        y: 78
-        width: 37
-        height: 52
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9536960da8b5d4b40a389f00e805c2f5
-      internalID: -287550199
+      spriteID: 7313add593a25d04e95de9d158d186a5
+      internalID: -437229887
       vertices: []
       indices: 
       edges: []
@@ -307,14 +160,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Idle_4: -1026086599
-      Idle_1: -1449034098
-      Idle_3: -1418270449
-      Idle_5: -1927780147
-      Idle_0: -1860378675
-      Idle_6: 1248551691
-      Idle_7: -287550199
-      Idle_2: -1527064652
+      Tortilla de papas_0: -437229887
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

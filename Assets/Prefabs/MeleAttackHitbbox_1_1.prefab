@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6256509597616622594
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1143477221556089064}
+  - component: {fileID: -7886158284519212929}
+  m_Layer: 0
+  m_Name: MeleAttackHitbbox_1_1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1143477221556089064
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6256509597616622594}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.2952614, y: -2.6455903, z: 0.07851346}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!60 &-7886158284519212929
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6256509597616622594}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.17353344, y: -0.8450122}
+      - {x: -0.00080776215, y: -0.60326934}
+      - {x: -0.00530529, y: -0.3541162}
+      - {x: -0.2730503, y: -0.026868582}
+      - {x: -1.0566425, y: 0.29964328}
+      - {x: -2.0448017, y: 0.3246082}
+      - {x: -2.6744967, y: 0.22074032}
+      - {x: -2.2209616, y: -0.21048948}
+      - {x: -1.45363, y: -0.19330561}
+      - {x: -0.92263114, y: -0.4241972}
+      - {x: -0.79822445, y: -0.68749475}
+      - {x: -0.8943949, y: -0.97100496}
+      - {x: -1.3343706, y: -1.1773384}
+      - {x: -2.0966039, y: -1.2654855}
+      - {x: -1.4184766, y: -1.282228}
+      - {x: -0.6074629, y: -1.1051948}

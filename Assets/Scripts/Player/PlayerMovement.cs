@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -15,6 +16,13 @@ public class PlayerMovement : MonoBehaviour
     private MovementState _movementState = MovementState.STAND;
     private Vector2 _directionLooking = new Vector2(0, 0);
 
+    [SerializeField]
+    private Attack1 _atack1;
+    
+    [SerializeField]
+    private Attack2 _atack2;
+    
+
     private Rigidbody2D _rigidbody2D;
     
     // Start is called before the first frame update
@@ -22,6 +30,10 @@ public class PlayerMovement : MonoBehaviour
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _rigidbody2D.isKinematic = false;
+
+        _atack1.OnAttack11 += OnAttack11Enter;
+        _atack1.OnAttack12 += OnAttack12Enter;
+        
         
         _state = State.IDLE;
         _movementState = MovementState.STAND;
@@ -37,34 +49,18 @@ public class PlayerMovement : MonoBehaviour
         switch (_state)
         {
             case State.IDLE:
+                _rigidbody2D.isKinematic = true;
+
                 _state = State.MOVING;
                 break;
             
             case State.MOVING:
                 Debug.Log(_movementState);
+                _rigidbody2D.isKinematic = false;
                 
                 // Update direction if can move
-                if (Input.GetKey(KeyCode.W))
-                {
-                    _directionLooking = Vector2.up;
-                }
-                        
-                if (Input.GetKey(KeyCode.A))
-                {
-                    directionMovement += Vector2.left;
-                    _directionLooking = Vector2.left;
-                }
-                        
-                if (Input.GetKey(KeyCode.S))
-                {
-                    _directionLooking = Vector2.down;
-                }
+                directionMovement = ManageMovementInputs();
                 
-                if (Input.GetKey(KeyCode.D))
-                {
-                    directionMovement += Vector2.right;
-                    _directionLooking = Vector2.right;
-                }
                 directionMovement = directionMovement.normalized;
 
                 if (_rigidbody2D.velocity.x < -maxSpeed)
@@ -91,18 +87,18 @@ public class PlayerMovement : MonoBehaviour
                 switch (_movementState)
                 {
                     case MovementState.STAND:
-                        // Debug.Log("Movement state: standing");
-                        // Debug.Log(directionMovement);
-                        // Debug.Log(_directionLooking);
+                        if (Input.GetKey(KeyCode.E))
+                            _state = State.ATTACKING;
+                        
+                        
                         if (_rigidbody2D.velocity.y < 0)
                             _movementState = MovementState.FALL;
 
-
-                        // if touches floor movsta = JUMP
-                        
                         break;
 
                     case MovementState.FALL:
+                        
+                        // Comprobar si esta sobre una superficie, sino se engancha en paredes.
                         if (_rigidbody2D.velocity.y == 0)
                         {
                             _movementState = MovementState.STAND;
@@ -111,12 +107,9 @@ public class PlayerMovement : MonoBehaviour
                         break;
                     
                     case MovementState.JUMP:
-                        Debug.Log("Hello");
                         if (_rigidbody2D.velocity.y == 0)
                             _rigidbody2D.velocity += new Vector2(0, 3*movementAcceleration);
-                            // _rigidbody2D.AddForce(new Vector2(0, 50 * movementAcceleration)); 
-                        
-                        
+
                         _movementState = MovementState.FALL;
                         break;
 
@@ -127,28 +120,48 @@ public class PlayerMovement : MonoBehaviour
                 break;
             
             case State.ATTACKING:
+                
                 break;
         }
         Debug.Log(_state);
         Debug.Log(_movementState);
     }
 
-    
-    void LookAt(Vector2 lookDirection)
+    private void OnAttack11Enter(Collider2D col)
     {
-
-    }
-
-    void UpdateActions()
-    {
-        
-    }
-
-    void UpdateState()
-    {
-        
+        throw new NotImplementedException();
     }
     
+    private void OnAttack12Enter(Collider2D col)
+    {
+        throw new NotImplementedException();
+    }
+
+    private static Vector2 ManageMovementInputs()
+    {
+        if (Input.GetKey(KeyCode.W))
+        {
+            return Vector2.up;
+        }
+        
+        if (Input.GetKey(KeyCode.S))
+        {
+            return Vector2.down;
+        }
+        
+        if (Input.GetKey(KeyCode.A))
+        {
+            return Vector2.left;
+        }
+        
+        if (Input.GetKey(KeyCode.D))
+        {
+            return Vector2.right;
+        }
+
+        return Vector2.zero;
+    }
+
     public enum State
     {
         IDLE,

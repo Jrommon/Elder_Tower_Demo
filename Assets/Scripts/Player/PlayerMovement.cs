@@ -31,8 +31,8 @@ public class PlayerMovement : MonoBehaviour
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _rigidbody2D.isKinematic = false;
 
-        _atack1.OnAttack11 += OnAttack11Enter;
-        _atack1.OnAttack12 += OnAttack12Enter;
+        // _atack1.OnAttack11 += OnAttack11Enter;
+        // _atack1.OnAttack12 += OnAttack12Enter;
         
         
         _state = State.IDLE;

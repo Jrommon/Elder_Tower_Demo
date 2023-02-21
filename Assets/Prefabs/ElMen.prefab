@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7792198676801441871}
   - component: {fileID: 4004243228508917365}
   - component: {fileID: -6607351402856955011}
+  - component: {fileID: -7729673486149365779}
   m_Layer: 0
   m_Name: ElMen
   m_TagString: Untagged
@@ -76,7 +77,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1911287554, guid: d303b290ca7608043ac9200c34a0ce19, type: 3}
+  m_Sprite: {fileID: -1860378675, guid: a19924ae60d4e48409889dca02c0cbf9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -125,7 +126,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.625, y: 1.175}
+    oldSize: {x: 0.925, y: 1.3}
     newSize: {x: 0.925, y: 1.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -148,3 +149,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementAcceleration: 5
   maxSpeed: 0
+  _atack1: {fileID: 0}
+  _atack2: {fileID: 0}
+--- !u!95 &-7729673486149365779
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7555336570919886658}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bd3d3bbd9d3c14c4b8b932abd368c786, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

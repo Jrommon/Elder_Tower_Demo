@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Floor
+  - PlayerAttack
   layers:
   - Default
   - TransparentFX

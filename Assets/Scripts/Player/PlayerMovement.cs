@@ -15,6 +15,14 @@ public class PlayerMovement : MonoBehaviour
     private State _state = State.IDLE;
     private MovementState _movementState = MovementState.STAND;
     private Vector2 _directionLooking = new Vector2(0, 0);
+    private bool _doubleJump;
+    private bool _jumpPowerUp;
+
+    public bool JumpPowerUp
+    {
+        get => _jumpPowerUp;
+        set => _jumpPowerUp = true;
+    }
 
     [SerializeField]
     private Attack1 _atack1;
@@ -24,11 +32,30 @@ public class PlayerMovement : MonoBehaviour
     
 
     private Rigidbody2D _rigidbody2D;
-    
+    private Animator _animator;
+    private Vector3 _scale;
+
+    private readonly int WalkingAnimatorParameter = Animator.StringToHash("Walking");
+    private readonly int AttackTypeAnimatorParameter = Animator.StringToHash("AttackType");
+    private readonly int IsDeadAnimatorParameter = Animator.StringToHash("IsDead");
+    private readonly int HitAnimatorParameter = Animator.StringToHash("Hit");
+    private readonly int JumpingAnimatorParameter = Animator.StringToHash("Jumping");
+    private readonly int AttackAnimatorParameter = Animator.StringToHash("Attack");
+
+
+
+
+    private void Awake()
+    {
+        _rigidbody2D = GetComponent<Rigidbody2D>();
+        _animator = GetComponent<Animator>();
+        _scale = transform.localScale;
+
+    }
+
     // Start is called before the first frame update
     void Start()
     {
-        _rigidbody2D = GetComponent<Rigidbody2D>();
         _rigidbody2D.isKinematic = false;
 
         // _atack1.OnAttack11 += OnAttack11Enter;
@@ -43,6 +70,8 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         Vector2 directionMovement = Vector3.zero;
+        _animator.SetBool(WalkingAnimatorParameter, false);
+
         Debug.Log(_state);
         Debug.Log(_movementState);
 
@@ -62,19 +91,24 @@ public class PlayerMovement : MonoBehaviour
                 directionMovement = ManageMovementInputs();
                 
                 directionMovement = directionMovement.normalized;
-
-                if (_rigidbody2D.velocity.x < -maxSpeed)
+                
+                if (directionMovement.x != 0)
                 {
-                    _rigidbody2D.AddForce(directionMovement.x > 0 ? directionMovement * movementAcceleration : Vector2.zero);
-                }
-                else if (_rigidbody2D.velocity.x > maxSpeed)
-                {
-                    _rigidbody2D.AddForce(directionMovement.x < 0 ? directionMovement * movementAcceleration : Vector2.zero);
+                    if (_rigidbody2D.velocity.y == 0)
+                        _animator.SetBool(WalkingAnimatorParameter, true);
+                    
                 }
                 else
                 {
-                    _rigidbody2D.AddForce(directionMovement * movementAcceleration);
+                    _rigidbody2D.velocity = new Vector2(0, _rigidbody2D.velocity.y);
                 }
+
+                if (Math.Abs(_rigidbody2D.velocity.x) < maxSpeed)
+                {
+                    _rigidbody2D.AddForce(directionMovement * movementAcceleration);
+
+                }
+
 
                 if (Input.GetKey(KeyCode.Space))
                 {
@@ -87,29 +121,36 @@ public class PlayerMovement : MonoBehaviour
                 switch (_movementState)
                 {
                     case MovementState.STAND:
+                        _doubleJump = _jumpPowerUp;
                         if (Input.GetKey(KeyCode.E))
                             _state = State.ATTACKING;
                         
                         
                         if (_rigidbody2D.velocity.y < 0)
+                        {
                             _movementState = MovementState.FALL;
-
+                        }
                         break;
 
                     case MovementState.FALL:
-                        
+                        _animator.SetBool(JumpingAnimatorParameter, true);
+
                         // Comprobar si esta sobre una superficie, sino se engancha en paredes.
                         if (_rigidbody2D.velocity.y == 0)
                         {
                             _movementState = MovementState.STAND;
+                            _animator.SetBool(JumpingAnimatorParameter, false);
+
                         }
+
+                        _doubleJump = _doubleJump ? true : false;
+                        
                         
                         break;
                     
                     case MovementState.JUMP:
-                        if (_rigidbody2D.velocity.y == 0)
-                            _rigidbody2D.velocity += new Vector2(0, 3*movementAcceleration);
-
+                        _animator.SetBool(JumpingAnimatorParameter, true);
+                        _rigidbody2D.velocity += new Vector2(0, 1.5f * movementAcceleration);
                         _movementState = MovementState.FALL;
                         break;
 
@@ -127,17 +168,25 @@ public class PlayerMovement : MonoBehaviour
         Debug.Log(_movementState);
     }
 
-    private void OnAttack11Enter(Collider2D col)
+    private void Fire()
     {
-        throw new NotImplementedException();
-    }
-    
-    private void OnAttack12Enter(Collider2D col)
-    {
-        throw new NotImplementedException();
+        // GameObject go = Instantiate(prefabffire);
+        // Fire goScript = go.GetComponent<Fire>();
+        // goScript.Position = _fireLaunchPoint.position;
+        //
+        // if (transform.localScale.x < 0)
+        // {
+        //     goScript.Direction = 2 * speed * Vector2.left;
+        // }
+        // else
+        // {
+        //     goScript.Direction = 2 * speed * Vector2.right;
+        //
+        // }
+        // TODO
     }
 
-    private static Vector2 ManageMovementInputs()
+    private Vector2 ManageMovementInputs()
     {
         if (Input.GetKey(KeyCode.W))
         {
@@ -160,6 +209,11 @@ public class PlayerMovement : MonoBehaviour
         }
 
         return Vector2.zero;
+    }
+    
+    private void LookRight(bool right)
+    {
+        transform.localScale = right ? _scale : new Vector3(-_scale.x, _scale.y, _scale.z);
     }
 
     public enum State

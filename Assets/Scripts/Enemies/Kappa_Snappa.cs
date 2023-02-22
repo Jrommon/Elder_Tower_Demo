@@ -3,27 +3,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody2D))]
-[RequireComponent(typeof(SpriteRenderer))]
-public class Kappa_Snappa : MonoBehaviour
-{
-    [Header("Main settings")]
-    
-    [SerializeField] private Rigidbody2D _rigidbody;
-    [SerializeField] private SpriteRenderer _spriteRenderer;
 
-    [Header("Movement settings")]
+public class Kappa_Snappa : EnemiesGeneral
+{
+    [Header("Kappa settings")]
     //Direccion: 1= derecha, dirrecion 2= Izquierda
     [SerializeField] [Range(-1,1)] private int _direction = 1;
     //Velocidad de movimiento
     [SerializeField] private int _speed;
 
+
+    //Raycast utilizado para detectar colisiones frontales con paredes
     private RaycastHit2D _ray;
-
-
-
-
-
 
     void Update()
     {
@@ -32,7 +23,7 @@ public class Kappa_Snappa : MonoBehaviour
         {
             moveFoward();
         }
-        //Gira a la criatura cuando  choca con una pared
+        //Manda el raycast y gira a la criatura cuando  choca con una pared
         _ray = Physics2D.Raycast(transform.position, Vector2.right * _direction, 1, 3);
         turn();
         //Comprueba si el sprite debe estar girado

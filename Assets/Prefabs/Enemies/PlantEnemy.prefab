@@ -120,6 +120,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f8dcb47f7965334186071cfea8d2194, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hp: 0
+  _rigidbody: {fileID: 8032365491729726118}
+  _spriteRenderer: {fileID: 8032365491729726113}
+  _animator: {fileID: 8032365491729726114}
   secondsToShoot: 3
   bullet: {fileID: 7330757104791705021, guid: b98a5b107d4f164449a29e0985655f4a, type: 3}
   target: {fileID: 0}

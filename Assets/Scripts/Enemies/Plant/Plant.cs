@@ -3,12 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Plant : MonoBehaviour
+public class Plant : EnemiesGeneral
 {
 
-    [Header("Enemy Settings")]
-    //Tiempo transcurrido entre disparos
-    private float secondsTillShoot;
+    [Header("Plant Settings")]
+
     //Tiempo que tiene que transcurrir para que dispare
     [SerializeField] private float secondsToShoot=3;
     //Objeto disparado
@@ -16,14 +15,14 @@ public class Plant : MonoBehaviour
     //Objetivo del look at target
     [SerializeField] private Transform target;
 
-    private Rigidbody2D _rigidbody;
-    private Animator _animator;
+    //Tiempo transcurrido entre disparos
+    private float secondsTillShoot;
+
+
 
     private void Start()
     {
-        secondsTillShoot = secondsToShoot;
-        _rigidbody = GetComponent<Rigidbody2D>();
-        _animator = GetComponent<Animator>();
+        secondsTillShoot = secondsToShoot;   
     }
     private void Update()
     {

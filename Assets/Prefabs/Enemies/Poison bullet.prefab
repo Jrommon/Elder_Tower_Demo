@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7330757104791705017}
   - component: {fileID: 7330757104791705016}
   - component: {fileID: 7330757104791704999}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Poison bullet
   m_TagString: Enemy
   m_Icon: {fileID: 0}

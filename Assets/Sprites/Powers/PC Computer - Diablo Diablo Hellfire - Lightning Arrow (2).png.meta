@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5a0b91868720e2345b5265daabeed6ba
+guid: 9689803b00e2122408ae7d909b1d4c47
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 40
+  spritePixelsToUnits: 30
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -129,181 +129,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Attack1_0
+      name: PC Computer - Diablo Diablo Hellfire - Lightning Arrow (2)_0
       rect:
         serializedVersion: 2
-        x: 71
-        y: 78
+        x: 11
+        y: 168
         width: 41
-        height: 53
-      alignment: 9
-      pivot: {x: 0.94267905, y: 0.016642444}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1c20f065f0525be41a6ca5461a55e8f6
-      internalID: 1451708574
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack1_1
-      rect:
-        serializedVersion: 2
-        x: 269
-        y: 78
-        width: 43
-        height: 53
-      alignment: 9
-      pivot: {x: 0.93848294, y: 0.01873909}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6c590aa0b53a27d4eb30a56d1c3ac4bd
-      internalID: 347301602
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack1_2
-      rect:
-        serializedVersion: 2
-        x: 471
-        y: 78
-        width: 41
-        height: 53
-      alignment: 9
-      pivot: {x: 0.9468525, y: 0.012767576}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9d39305fb16626645a4a00099d56f4c8
-      internalID: -1126322402
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack1_3
-      rect:
-        serializedVersion: 2
-        x: 673
-        y: 78
-        width: 41
-        height: 53
-      alignment: 9
-      pivot: {x: 0.8903377, y: 0.023494648}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3648a7ca04054dc41b77379b185616b0
-      internalID: 1526773411
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack1_4
-      rect:
-        serializedVersion: 2
-        x: 882
-        y: 78
-        width: 107
-        height: 69
-      alignment: 9
-      pivot: {x: 0.07476635, y: 0.014492754}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 142d3f3ef0e4a0048a4fc0792690c0eb
-      internalID: 228549032
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack1_5
-      rect:
-        serializedVersion: 2
-        x: 1081
-        y: 78
-        width: 109
-        height: 69
-      alignment: 9
-      pivot: {x: 0.09174311, y: 0.014492754}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 08a6aa46c1fa8a944b2863407bd5dd96
-      internalID: -1057250353
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack1_6
-      rect:
-        serializedVersion: 2
-        x: 997
-        y: 4
-        width: 45
-        height: 49
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: eaeaf2963575b3c42872bf7f5e934312
-      internalID: -760134014
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack1_7
-      rect:
-        serializedVersion: 2
-        x: 1068
-        y: 7
-        width: 4
-        height: 13
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 102f3f0821e047049bd89c7880c5aa2e
-      internalID: -672452822
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack1_8
-      rect:
-        serializedVersion: 2
-        x: 135
-        y: 0
-        width: 86
-        height: 67
+        height: 5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -311,8 +143,155 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6c12ac019acca1e459645d51f03c3afe
-      internalID: -1324842599
+      spriteID: 08832c615a2752644bcd292228cb7c9a
+      internalID: -502455341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Diablo Diablo Hellfire - Lightning Arrow (2)_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 73
+        width: 38
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 281c5e967937a744e8e745a6ed152d08
+      internalID: 167804965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Diablo Diablo Hellfire - Lightning Arrow (2)_2
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 169
+        width: 39
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec71d3d1fb8ce904ab6937e8ec0f49bb
+      internalID: -2122964339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Diablo Diablo Hellfire - Lightning Arrow (2)_3
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 73
+        width: 36
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7adfaea4574f82f45b75ff4932d0de83
+      internalID: -488169980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Diablo Diablo Hellfire - Lightning Arrow (2)_4
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 169
+        width: 39
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 517839baa81d1f44fa97993ef51f522e
+      internalID: -1709160721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Diablo Diablo Hellfire - Lightning Arrow (2)_5
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 73
+        width: 37
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 827a09baa05b83f49b12a0e7971d8602
+      internalID: -984353858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Diablo Diablo Hellfire - Lightning Arrow (2)_6
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 168
+        width: 38
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b334c45ca0d958d4ba4578404b9da53b
+      internalID: -1213421658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Diablo Diablo Hellfire - Lightning Arrow (2)_7
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 72
+        width: 34
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8b9e1f3ebc551744883e6d076a01a98
+      internalID: -677263857
       vertices: []
       indices: 
       edges: []
@@ -328,15 +307,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Attack1_8: -1324842599
-      Attack1_5: -1057250353
-      Attack1_6: -760134014
-      Attack1_7: -672452822
-      Attack1_0: 1451708574
-      Attack1_3: 1526773411
-      Attack1_2: -1126322402
-      Attack1_4: 228549032
-      Attack1_1: 347301602
+      PC Computer - Diablo Diablo Hellfire - Lightning Arrow (2)_4: -1709160721
+      PC Computer - Diablo Diablo Hellfire - Lightning Arrow (2)_7: -677263857
+      PC Computer - Diablo Diablo Hellfire - Lightning Arrow (2)_1: 167804965
+      PC Computer - Diablo Diablo Hellfire - Lightning Arrow (2)_0: -502455341
+      PC Computer - Diablo Diablo Hellfire - Lightning Arrow (2)_2: -2122964339
+      PC Computer - Diablo Diablo Hellfire - Lightning Arrow (2)_5: -984353858
+      PC Computer - Diablo Diablo Hellfire - Lightning Arrow (2)_3: -488169980
+      PC Computer - Diablo Diablo Hellfire - Lightning Arrow (2)_6: -1213421658
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

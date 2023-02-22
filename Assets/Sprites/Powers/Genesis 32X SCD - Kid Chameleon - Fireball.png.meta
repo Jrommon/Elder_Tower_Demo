@@ -1,0 +1,2105 @@
+fileFormatVersion: 2
+guid: 4a068de2c17e8d04a9466802dfc8c009
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 20
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 292
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d15dfc4d811b944fb8901643a525cb7
+      internalID: 1959761738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_1
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 292
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 973277d03890bc44cb31a3da3ff2f393
+      internalID: -1901642023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_2
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 292
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4f2223bc67119541a16c410304f0043
+      internalID: 1368142750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_3
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 292
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a19aecc6dae87fc42939ee99cd1b2b8c
+      internalID: -2062981071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_4
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 292
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 403667b9156431d4ba96f5367e1684a2
+      internalID: -105166747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_5
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 292
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 432e43c1500f0d34388709e710071831
+      internalID: -1058451881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_6
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 292
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aa70c81dff2e8d40b7ff883aabb89d5
+      internalID: 919371185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_7
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 263
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eef981c1be14d2041b2cfac360d00d7c
+      internalID: 1869069262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_8
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 263
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 368a73ce60fd46749b20fb5e602c3bac
+      internalID: -447016670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_9
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 265
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dde879a5f1439734faa556ae2ca17f96
+      internalID: 98355343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_10
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 264
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1954c5d84686e1469cd7b44a15fe22b
+      internalID: 923310447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_11
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 268
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24db5c4a1e713494bbfc702a8db9863a
+      internalID: -2019734356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_12
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 268
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3235d5ebad70ee458e0c66f78a7b162
+      internalID: -1093509046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_13
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 270
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d54552e3ed803bb49bf72ee26572f915
+      internalID: 1622898124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_14
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 242
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4351da9edfd7a4479edce3e79709058
+      internalID: 1937315752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_15
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 244
+        width: 21
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f88a50c4acfabf4ab8735382160e4c9
+      internalID: 1115757467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_16
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 244
+        width: 21
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 441ccacd35b23bf4ab5df43146be0b85
+      internalID: -98639831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_17
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 242
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b2d1d2be985ec44daf175d4ba146eb1
+      internalID: 2070296897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_18
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 241
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a6ad38bed67b0040bd6c9014fd110b0
+      internalID: 314979717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_19
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 217
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34210b3bbe933b845a1f927c53bf527f
+      internalID: -79201200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_20
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 217
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1441f7d902a915d44a97f63af373f19f
+      internalID: 730149622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_21
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 213
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d52e61777ded07e4fb47eb36d1c22552
+      internalID: 2031943432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_22
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 214
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89dd5150df4b99c419ddeb3adc1967f6
+      internalID: 945495197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_23
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 212
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbb6c07e4cbc6044e9b8f2ede5ddfc54
+      internalID: 1721608997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_24
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 212
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcc063a6a568a9c439f61ad9f5e8dbc5
+      internalID: -1414432575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_25
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 191
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34128806b263deb4c8fc1358e6e61ee1
+      internalID: 1921927678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_26
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 191
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1ae06ef762b63145a8d48e2799813d3
+      internalID: 524953107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_27
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 191
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08ce7e90611806f43adeeeb35c1d53d6
+      internalID: -1875261092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_28
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 191
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30bbc2a0abbd555449dc4bd16da93288
+      internalID: 1634231519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_29
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 191
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b37fcc220ede2740b6d4e2f99291e94
+      internalID: -894316705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_30
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 191
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e85db101a82474245ae4bc658d7a2652
+      internalID: -1668874163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_31
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 191
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dcf0d85021ae9d40a7bcf9bf2e699a3
+      internalID: -218996852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_32
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 162
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0347f0e23d660a14db203e5784279fde
+      internalID: -1314694790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_33
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 162
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c0b73136c9831848ac77e36bf796eb4
+      internalID: -316502661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_34
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 164
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e62eb4178423c694380e3f04b1356805
+      internalID: -1793483622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_35
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 163
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 720f2efbd71875740b78fcc91a3dfadf
+      internalID: -2077308601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_36
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 167
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9ebe3f8bfd83d34f9f849c3060915e1
+      internalID: 636292834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_37
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 167
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdd97659446d8fb43b7c8c6c9ba6c6a4
+      internalID: -2102897531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_38
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 169
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a010675f6d500514fb01daca0bd59aa0
+      internalID: 2031005071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_39
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 141
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f03048efd7c4da140a51fbfa1ac9d620
+      internalID: 2023333487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_40
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 143
+        width: 21
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce7bda87f66e37240b4cca4331f82fd0
+      internalID: 940537864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_41
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 143
+        width: 21
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a66461711f2ee64a828476e7eed6543
+      internalID: 931986822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_42
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 141
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e748b528f6337fa4c8840c24987a49c7
+      internalID: 1840568108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_43
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 140
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a822ae26b70dba40994829ce4e78752
+      internalID: -736772111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_44
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 116
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc29536d99c4d894080be98e7be49aed
+      internalID: -1207304207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_45
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 116
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8524b33537acd5b47823ea79f10ae981
+      internalID: 277160439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_46
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 112
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8988758de9ce1b44d803e22632968453
+      internalID: 236010404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_47
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 113
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 256dc647db346044ca3196eae3dec77b
+      internalID: 1183495525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_48
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 111
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2886140077faf174f834f873d129fcc9
+      internalID: 1186985299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_49
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 111
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c2ee592f8ccd334fb7ab5ef35efe4b6
+      internalID: -795187546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_50
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 90
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00b23f2c00621a34ebd3b90869d88c12
+      internalID: -1812774096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_51
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 90
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ed4302685d62014f8772d4a2ecfd3e0
+      internalID: -881042994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_52
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 90
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32b18bf4b74426648a562e2dd968809d
+      internalID: -660465719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_53
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 90
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c825d0717f8754d49a4bf0b03d047290
+      internalID: -1532393763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_54
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 90
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7dbc1c4d2eac834e87e1fdb53a6d94c
+      internalID: 1895251020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_55
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 90
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1c1e548bd465c943a81e5fd338e69c1
+      internalID: 2010210285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_56
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 90
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d794b6548566164d90dce6ff4af525b
+      internalID: 1529305216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_57
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 61
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff5235eaaf0e0f5478819fef134aa3e8
+      internalID: -694346885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_58
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 61
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fa57c1ddc4f2b0468102fd2c0ecd0f2
+      internalID: 937641416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_59
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 63
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71dae0ede1ea5f54193ad22ee357037a
+      internalID: 243186590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_60
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 62
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18cd9592cafd6824787c89c1707df446
+      internalID: 1392030501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_61
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 66
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d757f46c59255b4188d92a978478061
+      internalID: 1765470149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_62
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 66
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd1b6343b9f150f468117f71460fc20c
+      internalID: 2018347058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_63
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 68
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53639e26d55984b44870046192b0b713
+      internalID: -322426703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_64
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 40
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3d240d16578e9e428d21bd9b2f24a82
+      internalID: 1344343201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_65
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 42
+        width: 21
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6495e633f5e8f6f4d8808162a9192df5
+      internalID: -1811512374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_66
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 42
+        width: 21
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b11f23feb7af374e929393f282173bb
+      internalID: -1259641689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_67
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 40
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0377deba294819a46833410029959c63
+      internalID: -1690241186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_68
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 39
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4eb824f65295db408461a3fc03fcde8
+      internalID: -521445482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_69
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 15
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b3da455eb7443a43b3c4cf6d6d461d6
+      internalID: 1337141652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_70
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 15
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 088ad1fbe70dbb84fb3daba7678a6711
+      internalID: 2106498675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_71
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 11
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bafc5f0f3f9fce54aadb10aa75e580f8
+      internalID: 2066436249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_72
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 12
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeb650958a2fdb64b82d5608c7b462f3
+      internalID: -1958509751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_73
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 10
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddb1de35122590f4ea78eb955f0c4253
+      internalID: -416641045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_74
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 10
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2edf22d3181ce1a4487645522c0bae88
+      internalID: -307690179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_75
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 1
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cede4c388290c34988690435ab782c1
+      internalID: 1780978311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_76
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 1
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f917d225d44db94595e95566a6fa41f
+      internalID: -1952348822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_77
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 1
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f53e2d77196421469c8e5b6cddc5877
+      internalID: 513457749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_78
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 1
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b015f18b771679449ccfd601e033cdd
+      internalID: -1145955521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_79
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 1
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e0169b12c19b6847a849fb4eb8c7a7b
+      internalID: -600268065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_80
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 1
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b43995b1d12d2646af4ad1554a3629b
+      internalID: 801889569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_81
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 1
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97014e0cbfefbfd49ac3ce84deb5dc6f
+      internalID: -1271559730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_82
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 1
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ea22d2b4b8225d40b96beff6445059e
+      internalID: -217649526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_83
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 1
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d0666da7b9842949a2b7fa4dd04e10b
+      internalID: 1538324122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_84
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 1
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba068d89a17b22f4590829beef2ee813
+      internalID: 2099860650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_85
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 1
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11f3b1e5f45cea94dbcce1bdc78623f3
+      internalID: 968188311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_86
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 1
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1d6fdf474c1d1d47ba0f7a36ed149cf
+      internalID: -1747100664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_87
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 1
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a37e9a18c653a5e4da6f12ec97d3ffd9
+      internalID: -332500906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Genesis 32X SCD - Kid Chameleon - Fireball_88
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 1
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c051da228f3292b4d90a3044da29d99d
+      internalID: -439664168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Genesis 32X SCD - Kid Chameleon - Fireball_51: -881042994
+      Genesis 32X SCD - Kid Chameleon - Fireball_79: -600268065
+      Genesis 32X SCD - Kid Chameleon - Fireball_19: -79201200
+      Genesis 32X SCD - Kid Chameleon - Fireball_36: 636292834
+      Genesis 32X SCD - Kid Chameleon - Fireball_52: -660465719
+      Genesis 32X SCD - Kid Chameleon - Fireball_59: 243186590
+      Genesis 32X SCD - Kid Chameleon - Fireball_64: 1344343201
+      Genesis 32X SCD - Kid Chameleon - Fireball_4: -105166747
+      Genesis 32X SCD - Kid Chameleon - Fireball_60: 1392030501
+      Genesis 32X SCD - Kid Chameleon - Fireball_39: 2023333487
+      Genesis 32X SCD - Kid Chameleon - Fireball_38: 2031005071
+      Genesis 32X SCD - Kid Chameleon - Fireball_56: 1529305216
+      Genesis 32X SCD - Kid Chameleon - Fireball_6: 919371185
+      Genesis 32X SCD - Kid Chameleon - Fireball_74: -307690179
+      Genesis 32X SCD - Kid Chameleon - Fireball_77: 513457749
+      Genesis 32X SCD - Kid Chameleon - Fireball_82: -217649526
+      Genesis 32X SCD - Kid Chameleon - Fireball_44: -1207304207
+      Genesis 32X SCD - Kid Chameleon - Fireball_81: -1271559730
+      Genesis 32X SCD - Kid Chameleon - Fireball_70: 2106498675
+      Genesis 32X SCD - Kid Chameleon - Fireball_3: -2062981071
+      Genesis 32X SCD - Kid Chameleon - Fireball_57: -694346885
+      Genesis 32X SCD - Kid Chameleon - Fireball_50: -1812774096
+      Genesis 32X SCD - Kid Chameleon - Fireball_27: -1875261092
+      Genesis 32X SCD - Kid Chameleon - Fireball_10: 923310447
+      Genesis 32X SCD - Kid Chameleon - Fireball_37: -2102897531
+      Genesis 32X SCD - Kid Chameleon - Fireball_73: -416641045
+      Genesis 32X SCD - Kid Chameleon - Fireball_76: -1952348822
+      Genesis 32X SCD - Kid Chameleon - Fireball_88: -439664168
+      Genesis 32X SCD - Kid Chameleon - Fireball_30: -1668874163
+      Genesis 32X SCD - Kid Chameleon - Fireball_31: -218996852
+      Genesis 32X SCD - Kid Chameleon - Fireball_80: 801889569
+      Genesis 32X SCD - Kid Chameleon - Fireball_22: 945495197
+      Genesis 32X SCD - Kid Chameleon - Fireball_41: 931986822
+      Genesis 32X SCD - Kid Chameleon - Fireball_0: 1959761738
+      Genesis 32X SCD - Kid Chameleon - Fireball_66: -1259641689
+      Genesis 32X SCD - Kid Chameleon - Fireball_84: 2099860650
+      Genesis 32X SCD - Kid Chameleon - Fireball_14: 1937315752
+      Genesis 32X SCD - Kid Chameleon - Fireball_25: 1921927678
+      Genesis 32X SCD - Kid Chameleon - Fireball_1: -1901642023
+      Genesis 32X SCD - Kid Chameleon - Fireball_61: 1765470149
+      Genesis 32X SCD - Kid Chameleon - Fireball_33: -316502661
+      Genesis 32X SCD - Kid Chameleon - Fireball_65: -1811512374
+      Genesis 32X SCD - Kid Chameleon - Fireball_75: 1780978311
+      Genesis 32X SCD - Kid Chameleon - Fireball_78: -1145955521
+      Genesis 32X SCD - Kid Chameleon - Fireball_69: 1337141652
+      Genesis 32X SCD - Kid Chameleon - Fireball_83: 1538324122
+      Genesis 32X SCD - Kid Chameleon - Fireball_67: -1690241186
+      Genesis 32X SCD - Kid Chameleon - Fireball_11: -2019734356
+      Genesis 32X SCD - Kid Chameleon - Fireball_71: 2066436249
+      Genesis 32X SCD - Kid Chameleon - Fireball_58: 937641416
+      Genesis 32X SCD - Kid Chameleon - Fireball_26: 524953107
+      Genesis 32X SCD - Kid Chameleon - Fireball_32: -1314694790
+      Genesis 32X SCD - Kid Chameleon - Fireball_45: 277160439
+      Genesis 32X SCD - Kid Chameleon - Fireball_13: 1622898124
+      Genesis 32X SCD - Kid Chameleon - Fireball_86: -1747100664
+      Genesis 32X SCD - Kid Chameleon - Fireball_17: 2070296897
+      Genesis 32X SCD - Kid Chameleon - Fireball_34: -1793483622
+      Genesis 32X SCD - Kid Chameleon - Fireball_42: 1840568108
+      Genesis 32X SCD - Kid Chameleon - Fireball_55: 2010210285
+      Genesis 32X SCD - Kid Chameleon - Fireball_47: 1183495525
+      Genesis 32X SCD - Kid Chameleon - Fireball_85: 968188311
+      Genesis 32X SCD - Kid Chameleon - Fireball_23: 1721608997
+      Genesis 32X SCD - Kid Chameleon - Fireball_16: -98639831
+      Genesis 32X SCD - Kid Chameleon - Fireball_62: 2018347058
+      Genesis 32X SCD - Kid Chameleon - Fireball_54: 1895251020
+      Genesis 32X SCD - Kid Chameleon - Fireball_87: -332500906
+      Genesis 32X SCD - Kid Chameleon - Fireball_72: -1958509751
+      Genesis 32X SCD - Kid Chameleon - Fireball_35: -2077308601
+      Genesis 32X SCD - Kid Chameleon - Fireball_29: -894316705
+      Genesis 32X SCD - Kid Chameleon - Fireball_9: 98355343
+      Genesis 32X SCD - Kid Chameleon - Fireball_12: -1093509046
+      Genesis 32X SCD - Kid Chameleon - Fireball_63: -322426703
+      Genesis 32X SCD - Kid Chameleon - Fireball_49: -795187546
+      Genesis 32X SCD - Kid Chameleon - Fireball_5: -1058451881
+      Genesis 32X SCD - Kid Chameleon - Fireball_20: 730149622
+      Genesis 32X SCD - Kid Chameleon - Fireball_8: -447016670
+      Genesis 32X SCD - Kid Chameleon - Fireball_21: 2031943432
+      Genesis 32X SCD - Kid Chameleon - Fireball_24: -1414432575
+      Genesis 32X SCD - Kid Chameleon - Fireball_18: 314979717
+      Genesis 32X SCD - Kid Chameleon - Fireball_53: -1532393763
+      Genesis 32X SCD - Kid Chameleon - Fireball_68: -521445482
+      Genesis 32X SCD - Kid Chameleon - Fireball_28: 1634231519
+      Genesis 32X SCD - Kid Chameleon - Fireball_15: 1115757467
+      Genesis 32X SCD - Kid Chameleon - Fireball_43: -736772111
+      Genesis 32X SCD - Kid Chameleon - Fireball_2: 1368142750
+      Genesis 32X SCD - Kid Chameleon - Fireball_48: 1186985299
+      Genesis 32X SCD - Kid Chameleon - Fireball_46: 236010404
+      Genesis 32X SCD - Kid Chameleon - Fireball_7: 1869069262
+      Genesis 32X SCD - Kid Chameleon - Fireball_40: 940537864
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

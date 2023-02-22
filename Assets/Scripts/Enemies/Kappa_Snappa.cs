@@ -30,6 +30,7 @@ public class Kappa_Snappa : MonoBehaviour
             moveFoward();
         }
         //Gira a la criatura cuando  choca con una pared
+        
         turn();
         //Comprueba si el sprite debe estar girado
         _spriteRenderer.flipX = _direction == 1 ? true : false;
@@ -39,9 +40,11 @@ public class Kappa_Snappa : MonoBehaviour
 
     private void turn()
     {
-        if (Physics2D.Raycast(transform.position,Vector2.right*_direction, 1, 3))
+
+        if (Physics2D.Raycast(transform.position, Vector2.right * _direction, 1))
         {
-            _direction = -_direction;
+            
+                _direction = -_direction;
         }
     }
 

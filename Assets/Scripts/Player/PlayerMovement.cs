@@ -123,7 +123,7 @@ public class PlayerMovement : MonoBehaviour
                 }
                 
                 // Jump
-                if (Input.GetKey(KeyCode.Space))
+                if (Input.GetKeyDown(KeyCode.Space))
                 {
                     if (_movementState is MovementState.WALK or MovementState.STAND || _doubleJump)
                         _movementState = MovementState.JUMP;

@@ -12,11 +12,11 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Transform magicAttackPosition;
 
     [SerializeField]
-    private float movementAcceleration = 4, maxSpeed = 5, jumpForce = 5;
+    private float speed = 4, jumpForce = 5;
 
     private State _state = State.IDLE;
     private MovementState _movementState = MovementState.STAND;
-    private Vector2 _directionLooking = new Vector2(0, 0);
+    private Vector2 _directionLooking = Vector2.right;
     private bool _jumpPowerUp;
     private bool _doubleJump;
     private bool _isMele = true;
@@ -81,6 +81,8 @@ public class PlayerMovement : MonoBehaviour
         // _animator.SetInteger(_attackTypeAnimatorParameter, 0);
 
         AttackType attackType = AttackInput();
+        if (Input.GetKeyDown(KeyCode.T)) 
+                ToggleAttack();
 
         switch (_state)
         {
@@ -100,6 +102,8 @@ public class PlayerMovement : MonoBehaviour
                     _ => _state
                 };
 
+
+
                 // Update direction if can move
                 directionMovement = ManageMovementInputs().normalized;
                 
@@ -109,7 +113,7 @@ public class PlayerMovement : MonoBehaviour
                     _animator.SetBool(_walkingAnimatorParameter, _rigidbody2D.velocity.y == 0);
                     
                     // Movement
-                    transform.Translate(new Vector2(directionMovement.x, 0) * (movementAcceleration * Time.deltaTime));
+                    transform.Translate(new Vector2(directionMovement.x, 0) * (speed * Time.deltaTime));
                     LookRight(directionMovement.x > 0);
                 }
                 else
@@ -176,7 +180,15 @@ public class PlayerMovement : MonoBehaviour
                         else
                         {
                             _animator.SetInteger(_attackTypeAnimatorParameter, 3);
-                            var fire = Instantiate(fireBallAttack, transform.GetChild(4).transform);
+                            var fire = Instantiate(
+                                fireBallAttack,
+                                new Vector3(
+                                    magicAttackPosition.localPosition.x * _directionLooking.x,
+                                    magicAttackPosition.localPosition.y,
+                                    0),
+                                Quaternion.identity);
+                            MagicAttack magicAttack = fire.GetComponent<MagicAttack>();
+                            magicAttack.Movement = 5 * _directionLooking;
                         }
                         break;
                     
@@ -188,7 +200,16 @@ public class PlayerMovement : MonoBehaviour
                         else
                         {
                             _animator.SetInteger(_attackTypeAnimatorParameter, 3);
-                            var fire = Instantiate(thunderAttack, transform.GetChild(4).transform);
+                            
+                            var fire = Instantiate(
+                                thunderAttack,
+                                new Vector3(
+                                    magicAttackPosition.localPosition.x * _directionLooking.x,
+                                    magicAttackPosition.localPosition.y,
+                                    0),
+                                Quaternion.identity);
+                            MagicAttack magicAttack = fire.GetComponent<MagicAttack>();
+                            magicAttack.Movement = 5 * _directionLooking;
 
                         }
                         break;
@@ -197,7 +218,15 @@ public class PlayerMovement : MonoBehaviour
                         if (_isMele)
                         {
                             _animator.SetInteger(_attackTypeAnimatorParameter, 3);
-                            var fire = Instantiate(fireBallAttack, transform.GetChild(4).transform);
+                            var fire = Instantiate(
+                                fireBallAttack,
+                                new Vector3(
+                                    magicAttackPosition.localPosition.x * _directionLooking.x,
+                                    magicAttackPosition.localPosition.y,
+                                0),
+                                Quaternion.identity);
+                            MagicAttack magicAttack = fire.GetComponent<MagicAttack>();
+                            magicAttack.Movement = 5 * _directionLooking;
                         }
                         else
                         {
@@ -209,6 +238,8 @@ public class PlayerMovement : MonoBehaviour
                         _state = State.MOVING;
                         break;
                 }
+                _state = State.MOVING;
+
                 break;
         }
     }
@@ -225,24 +256,6 @@ public class PlayerMovement : MonoBehaviour
         _meleNormalAttackHitbox2.SetActive(false);
         _meleHeavyAttackHitbox2.SetActive(false);
         _meleHeavyAttackHitbox2.SetActive(false);
-    }
-
-    private void Fire()
-    {
-        // GameObject go = Instantiate(prefabffire);
-        // Fire goScript = go.GetComponent<Fire>();
-        // goScript.Position = _fireLaunchPoint.position;
-        //
-        // if (transform.localScale.x < 0)
-        // {
-        //     goScript.Direction = 2 * speed * Vector2.left;
-        // }
-        // else
-        // {
-        //     goScript.Direction = 2 * speed * Vector2.right;
-        //
-        // }
-        // TODO
     }
 
     private Vector2 ManageMovementInputs()
@@ -289,6 +302,7 @@ public class PlayerMovement : MonoBehaviour
     private void LookRight(bool right)
     {
         transform.localScale = right ? _scale : new Vector3(-_scale.x, _scale.y, _scale.z);
+        _directionLooking = right ? Vector2.right : Vector2.left;
     }
 
     public enum State
@@ -306,7 +320,7 @@ public class PlayerMovement : MonoBehaviour
         FALL
     }
     
-    public enum AttackType
+    private enum AttackType
     {
         NONE,
         NORMAL,

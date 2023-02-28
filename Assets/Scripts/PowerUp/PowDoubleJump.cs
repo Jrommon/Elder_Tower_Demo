@@ -6,6 +6,8 @@ public class PowDoubleJump : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D col)
     {
         //Habilitar en esta seccion el flag de salto doble.
+        col.gameObject.GetComponent<PlayerMovement>().JumpPowerUp = true;
+        
         
         //Debug.Log($"Tag del jugador: {PlayerTag} \n Tag del colisionador: {col.tag}");
         if (col.CompareTag(PlayerTag))

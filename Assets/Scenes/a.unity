@@ -132,7 +132,35 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -6607351402856955011, guid: 61fb74ecb3adcc4409e91318951b99c2, type: 3}
       propertyPath: maxSpeed
-      value: 5
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -6607351402856955011, guid: 61fb74ecb3adcc4409e91318951b99c2, type: 3}
+      propertyPath: jumpForce
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -6607351402856955011, guid: 61fb74ecb3adcc4409e91318951b99c2, type: 3}
+      propertyPath: movementAcceleration
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3924616981788973914, guid: 61fb74ecb3adcc4409e91318951b99c2, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -995577453, guid: c749f6c33b892b643abf4caaa2a42e23, type: 3}
+    - target: {fileID: 4004243228508917365, guid: 61fb74ecb3adcc4409e91318951b99c2, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.x
+      value: 0.6315789
+      objectReference: {fileID: 0}
+    - target: {fileID: 4004243228508917365, guid: 61fb74ecb3adcc4409e91318951b99c2, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.y
+      value: 0.03773585
+      objectReference: {fileID: 0}
+    - target: {fileID: 4004243228508917365, guid: 61fb74ecb3adcc4409e91318951b99c2, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1.425
+      objectReference: {fileID: 0}
+    - target: {fileID: 4004243228508917365, guid: 61fb74ecb3adcc4409e91318951b99c2, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1.325
       objectReference: {fileID: 0}
     - target: {fileID: 5785919191846291388, guid: 61fb74ecb3adcc4409e91318951b99c2, type: 3}
       propertyPath: m_RootOrder

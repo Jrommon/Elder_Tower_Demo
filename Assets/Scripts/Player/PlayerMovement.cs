@@ -250,7 +250,7 @@ public class PlayerMovement : MonoBehaviour
     private void EnableMeleNormalAttackHitbox2() => _meleNormalAttackHitbox2.SetActive(true);
     private void EnableHeavyAttackHitbox1() => _meleNormalAttackHitbox1.SetActive(true);
     private void EnableHeavyAttackHitbox2() => _meleHeavyAttackHitbox2.SetActive(true);
-    private void DisableMeleAttackHitbox()
+    public void DisableMeleAttackHitbox()
     {
         _meleNormalAttackHitbox1.SetActive(false);
         _meleNormalAttackHitbox2.SetActive(false);

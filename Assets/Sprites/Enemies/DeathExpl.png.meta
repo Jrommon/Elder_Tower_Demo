@@ -1,0 +1,5081 @@
+fileFormatVersion: 2
+guid: 3eb3b266a0e10ac4cbaeef669d611141
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DeathExpl_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 399
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f2386be1525a3f4b8f695e4fe53dfdb
+      internalID: 224135268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_1
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 399
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc3b2e7adfbe92b49a631d0229988605
+      internalID: -941282853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_2
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 399
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 914717200d3bf254780e6bb95cae8857
+      internalID: 722643419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_3
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 399
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8886b7d6ed99c574aa394a2dbd05d01b
+      internalID: -366730017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_4
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 399
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1521bc872dd6ccc42953d64d00bc2088
+      internalID: 225444957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_5
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 399
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c54a51854f7c50c41b117e19c8178e96
+      internalID: -45760967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_6
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 399
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18c1b640f1823c247830cb10995f5949
+      internalID: -772429680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_7
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 400
+        width: 33
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d58963eba0afef4091d431b088340c6
+      internalID: -1775921322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_8
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 400
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb09ed95414df1b47ba29c70e993743d
+      internalID: 1353599709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_9
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 400
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c143d5a6203ade94682fa99b98eee833
+      internalID: -1330105767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_10
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 400
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 160dc985fb75b8b48bdc98dc8bdc7a32
+      internalID: 646206290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_11
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 400
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67df44fad74bfb943a82ed46323ac96b
+      internalID: 1493558679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_12
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 400
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cb5129a632ae5d4b8329638f27d710c
+      internalID: 1707782406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_13
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 400
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6471b8941df0b4041967edcaf46b2dc0
+      internalID: -964693099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_14
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 400
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c374cd39e0d92841989b6fecf23685f
+      internalID: 1783907272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_15
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 411
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e52ca51cddde83419ff921e52e4bb8d
+      internalID: -2108617203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_16
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 411
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cce45495a5553684ab5d6561dfe3b658
+      internalID: -1304172135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_17
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 411
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdaa6491906ff04449ef252a68f9f1c7
+      internalID: 1042845512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_18
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 411
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b349b9aa0a8c8f488e1ad87078585b8
+      internalID: -1768838689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_19
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 411
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72b6a9bb19ec8c64fbd0968918e247ff
+      internalID: -2044890952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_20
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 411
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d9bdc7b8a2629a45a4cf4bfea9f298a
+      internalID: 301703696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_21
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 330
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dccea8b0e3ee3c94ba8477a8bafb5e87
+      internalID: -323099029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_22
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 388
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90a411af2ff9f2a47b9b44af2eab7f2a
+      internalID: -2126326626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_23
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 388
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e185661d5e7a4a468de46209933e6d8
+      internalID: -1279519471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_24
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 388
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff6a9ffca25546c448c7080e9bef4914
+      internalID: 850412724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_25
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 388
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f00ad6f9ab6d9546bfd11ce1c1e8ad1
+      internalID: -318540398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_26
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 388
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 585e9d0592e0ecd42a7382df5e40b6bf
+      internalID: 550259463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_27
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 388
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0371790d5162a03499963d14b5fd98fe
+      internalID: 937498499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_28
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 360
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b299e00a6eee754389b29b725e438cc
+      internalID: 2087234052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_29
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 360
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e827d6a61f9508f44810fe15de3ebfd3
+      internalID: -635077122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_30
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 360
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b99a1c7947de5641b9c05e54e5faaa9
+      internalID: 476795631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_31
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 360
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fdcf07e6f45ae54892e0be434b5a16e
+      internalID: -985593304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_32
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 360
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0f3e969fa3887d468407a48bc57ba90
+      internalID: -1436619448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_33
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 360
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f4a3b2056f0d6845b1de85ceb59970d
+      internalID: -257985201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_34
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 360
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6282c1adf4b4244dbf49368e9aac7c2
+      internalID: 1472373921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_35
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 399
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8de87d90a2d71df4091f3f5ddff61fbe
+      internalID: 1151260431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_37
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 363
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65beaa764c286244daf365b6dfe92498
+      internalID: 853435662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_38
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 363
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1db6f03ccb50d394bbf2a37ba9730147
+      internalID: -969085564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_39
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 363
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28720d1b6df389144a6606940ce5ccc6
+      internalID: -681329960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_40
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 363
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d29dffa2b3322440a3a800fc5741c6d
+      internalID: 1106738599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_41
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 363
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecd0582f584536742bdf18414809db10
+      internalID: -1831874267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_42
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 363
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b0d03950d8ec5c4ca8169991bec8e0e
+      internalID: 1634653414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_43
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 363
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c237170641db7b4f8b9df42eef83b8a
+      internalID: -544578667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_44
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 366
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32bb86faff0a36145bc8e2984a172686
+      internalID: -525215699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_45
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 366
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45e04471234247f429ecfbd5e27e6c50
+      internalID: 1953580114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_46
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 366
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1246aa1a91ff32a46a5008fc22ff583e
+      internalID: -1546210504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_47
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 366
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b304008b5af58434394e0f3741f0cfb2
+      internalID: -1657795303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_48
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 366
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a88f41cf17cfd2441a2af45e07e3a26a
+      internalID: 651566350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_49
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 366
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7609722ccb9ea1f40b08214a8472bec7
+      internalID: -41567577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_50
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 330
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 242f7418334b03f4590888560f212fce
+      internalID: 761254832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_51
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 330
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f2065873c8330b489cc901cbe69e86b
+      internalID: 217085616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_52
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 330
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 839540a8aad92b343b61ecc41de7af2c
+      internalID: -1704444556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_53
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 330
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc950d6d34d807b4a9416d7c310f9af1
+      internalID: -1010815797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_54
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 330
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4adc0f95956e98448778bc73a59f136
+      internalID: -1633127040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_55
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 330
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7571753001220b4baf7f357f9ade4d8
+      internalID: -164512301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_58
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 331
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5817485433c103c41970867bcceced86
+      internalID: 1196554195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_59
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 331
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36ffaf4d1b260144a97e6418392ae3d2
+      internalID: -1315090617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_60
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 331
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 337fec97a1f887c47918585262365903
+      internalID: 972413312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_61
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 331
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad1e60121c857c64ba6acb64bb96d942
+      internalID: 44444759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_62
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 331
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35f425ec5b3617f428864092341813bc
+      internalID: 850787323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_63
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 331
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48f13d7098b486d4db8a2870a92836be
+      internalID: -8946866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_64
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 331
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab409ee0f24f4b042a76ff225b1d5c9e
+      internalID: 1103399658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_65
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 346
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15ff5032677773e4bafb9ae81e225e32
+      internalID: 91645205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_66
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 346
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5accc045ff0dcb44a9890ddeb89f019b
+      internalID: -1865320985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_67
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 346
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5ea7f81d58b6c341b0c0c9efcfada59
+      internalID: 1430704211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_68
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 346
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17a12b24c4fc6364aae3505c6fdccad6
+      internalID: -1477311267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_69
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 346
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f0c124c2f7b50446bf930139b0ef8f7
+      internalID: 1864657839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_70
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 346
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12bf5794c2066a14185124df317cfec5
+      internalID: -139378801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_74
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 308
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 803254f79072a31449c6dc68767016b6
+      internalID: -1366120638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_75
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 308
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58a21669e2781b445a016da411a1310b
+      internalID: 2057064671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_76
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 308
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 396288d37ac7e844d8ef05df66c141e5
+      internalID: -1911984609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_77
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 308
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c569ed53d0ec2543938987a873ff4fd
+      internalID: 339786160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_78
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 308
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ad6d1ad7164c6e48bf399f67320c677
+      internalID: -1516068764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_79
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 308
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f1bc4fa7bfcd374e8d045a2c105831f
+      internalID: 1610588023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_80
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 308
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d84393c24c3348e419c53c8602c8f809
+      internalID: 55143832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_81
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 308
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d8cbc28ecd4641459a6bd305d2fe1ba
+      internalID: 1203298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_82
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 258
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7b6c5c2d0b63144eb64486ca9711f28
+      internalID: 327890146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_83
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 258
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ddfa3ce411e6a94697ca9517d7c3cd8
+      internalID: -595630573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_84
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 258
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4e70606ebf0db149a656fcd9174baaa
+      internalID: 720447517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_85
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 258
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59b5ce1a4dd31a1429df24f4a1ef4206
+      internalID: 596146285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_86
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 258
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36789b27d1d332a48ac6472ab718d594
+      internalID: -1048100535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_87
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 258
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b1bb8fd8b7c6c5469578e94790d9bad
+      internalID: -897664279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_88
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 259
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73a090289da5b3443afab83164f798ea
+      internalID: -562858765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_89
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 259
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d742703fbeab5b54daea0c218ca45c6d
+      internalID: 423954611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_90
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 259
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dba81be7a458ad449c6e99968a491ab
+      internalID: 937449375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_91
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 259
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 813c33150d6a849498e00452beece822
+      internalID: -1911656154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_92
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 259
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f750442bf1543149a5f80533f22e5b1
+      internalID: 765679419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_93
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 259
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ded05a2ad36507442b5820186536d803
+      internalID: -249285688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_94
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 259
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e37b8d30552ff914bb2c9033d01bf6ee
+      internalID: 633204721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_95
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 270
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7fc50545d231d84eb2ea2984a5d7d5a
+      internalID: 1048529713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_96
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 270
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e5b8c5b33184c24495be31a02af4e8f
+      internalID: -218274836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_97
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 270
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8c7d92b36c221a42b1acc0073beae92
+      internalID: 1795632391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_98
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 270
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3d6f5c39cf86d941bc5588f09e7cd2c
+      internalID: -620828186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_99
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 270
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59e5dfdd09f27e243a04a04a8406731e
+      internalID: -863590498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_100
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 270
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb74c753ab733ff489a8d6ad4096f075
+      internalID: 12811754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_101
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 258
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2165879b782fcc49b5de4e50082188e
+      internalID: -426944883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_102
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 247
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f6393f316cc6e141a7a1b1c481ed32b
+      internalID: 1425596814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_103
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 247
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa924ea5d82221946a397fcbae06e913
+      internalID: -1330174741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_104
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 247
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d543a01f7e657584bb908200edb3b891
+      internalID: -1281057657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_105
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 247
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5eba59163e68544a981e402b9e7915d
+      internalID: 280136152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_106
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 247
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a646dfd73ef3664aafeef6515f60dcc
+      internalID: 660826441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_107
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 247
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4a41174a3665184c9300eea8db14650
+      internalID: 1505937783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_108
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 219
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92a0913992225c84db97dabe213ed91b
+      internalID: 1231413743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_109
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 219
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef993faea7593d548947344838377503
+      internalID: -1620462489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_110
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 219
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd7b5e9d68c39fe4bbad8c69a659d8cf
+      internalID: 424352002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_111
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 219
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fac4e9f24ed008499c238d76c8e6dfd
+      internalID: -865423836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_112
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 220
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cc3862be0a239747b9f27b40b20e918
+      internalID: 2142564948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_113
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 219
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d954c392d15a064c99fab0f1dc0bd66
+      internalID: -1937571617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_114
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 218
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9230a8e754ad6d94fb2ecb618cebedff
+      internalID: -1628718549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_115
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 222
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e81c8d7076d4ed43acef59fea5d9122
+      internalID: 1481864953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_116
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 222
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 024225c1ef7a28844ba26e9b43d9885d
+      internalID: 771621118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_117
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 222
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14b3e44cf07f7c94eafde607d80b24f3
+      internalID: -1623071127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_118
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 222
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfe01be266fabdb48af2e339c12eca87
+      internalID: 1357237918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_119
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 222
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86c0bcd0a9d36ef43a84a5db453127bf
+      internalID: -465230431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_120
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 222
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7a360d1602631b47b65844fe5926ea5
+      internalID: -1809313206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_121
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 222
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 256019f8d3aefa242b3d44b58b892c69
+      internalID: -2056644739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_122
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 225
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61faecec19d64784b9238297b4f90b73
+      internalID: -559731661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_123
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 225
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35b463363e9ed5a4e9d53167099965cb
+      internalID: 1457947266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_124
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 225
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2c212c5de15a1d419cfc35fb932efac
+      internalID: 1805808007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_125
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 225
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 646bb455528a4ce46ae9932aedf18929
+      internalID: 26342059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_126
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 225
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fa7692356fcc52428c5728f8d50cabc
+      internalID: 591584923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_127
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 225
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85fa76f57e92f024abaa17bed2cbdcec
+      internalID: 6147512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_128
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 189
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e61e9f7ec4fc3f84c858677cc0962c21
+      internalID: -509013750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_129
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 189
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33e5bb640c5b93f4ab3f87d2085834ab
+      internalID: -296169571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_130
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 189
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7403e2332d0b704b9893f81af6c0ed6
+      internalID: 2060206705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_131
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 189
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e441c6640c9851443bb49e63f2a3f4b2
+      internalID: -495358714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_132
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 167
+        width: 33
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbc5d2ca8b1148d4d896d756faadb68e
+      internalID: -64068303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_133
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 201
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 736a59f9a0872d745aa528d5102fd7ac
+      internalID: 1313141833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_134
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 190
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 609d5b3bc864f494fa5f145b9f776435
+      internalID: -265284216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_135
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 190
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e272675fb8a6bd7438c3c0b6fad97057
+      internalID: 256069213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_136
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 190
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a7a73fe5389b6545be20be5c1072a36
+      internalID: -1312269535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_137
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 190
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 396727a28eb9fcc448d67b7c5649d499
+      internalID: 1275181390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_138
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 190
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51cd9d0d3ba24fd43a884cc744398aed
+      internalID: -529294463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_139
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 190
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 816577faf367ddb48a373c2ea4f77bf5
+      internalID: 1954145565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_140
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 190
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4cc153c35470704899c988f384c1c00
+      internalID: -1324295711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_141
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 205
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d23ba325ca39ff4e9965b0204d48999
+      internalID: -1469118323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_142
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 205
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd6cf1c51f5fcd742ad640471387ab8d
+      internalID: -1720510738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_143
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 205
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad2fe2b0645dd5e498f8d80bfef5d71c
+      internalID: -385594874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_144
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 205
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84322b756e693aa42bcd3c3d1c44ddb5
+      internalID: 88021429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_145
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 205
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a26248af3bbc064686ba27b79d920e0
+      internalID: -1899970473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_146
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 205
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87eb25de7ab075d489ff4cc3344f89a7
+      internalID: 1627202924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_147
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 189
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 805bd7aef82af1343b8d6096af825541
+      internalID: -225290478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_148
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 189
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7834a2de6fde44b498c8c6f6ad1adc85
+      internalID: 1758553882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_149
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 191
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ff187bc107a51245a03880f54fe0395
+      internalID: -1085418639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_150
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 167
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20f091604b80acb4780a419cacfa27db
+      internalID: -76813481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_151
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 167
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f518c7b42bc3cc41a43a76bed69c736
+      internalID: 674926899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_152
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 167
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bf6785cd3b7ce844891ba696c7c2cd4
+      internalID: 652252327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_153
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 167
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ab9dbbf085583a4da242b3ca4c02c15
+      internalID: -1580823911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_154
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 167
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 347daea53d7df0040b4efc5d98a498dd
+      internalID: 1723751053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_155
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 167
+        width: 6
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da00b73fa5579c449b703c4f593272fd
+      internalID: 1504633827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_156
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 111
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d089ad1661d3e54488c94bf602952f57
+      internalID: -1966298017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_157
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 111
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90433a31c3aeb83438154bd853239977
+      internalID: 1477975179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_158
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 111
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 932a549519535644bbe23a3b1a573264
+      internalID: -564982414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_159
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 111
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02c8bebeaa41b8a48a29230df9f9b91a
+      internalID: 984387773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_160
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 111
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d855509bd70f3a3459d19c8d1c03ce0f
+      internalID: 1933746012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_161
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 72
+        width: 63
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fe3a6c8131f30c4aa645cbfd7e47ad7
+      internalID: 1816509763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_162
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 112
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0470a4b8964881346aa9909ea8dcb5b1
+      internalID: -1929301091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_163
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 112
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97dcd134f9c02864597df47597fc55e5
+      internalID: -2125229374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_164
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 112
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30569fb114aef494fa4dc3a1f1f1799f
+      internalID: 963577746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_165
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 112
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fec966ba859cd8947aa177af6110de78
+      internalID: -1468691282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_166
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 112
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32f5bb28e4c2c664c97310ab1a692f03
+      internalID: 1552756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_167
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 112
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aed09738e287eb4ab16d0c444f341e0
+      internalID: 1952631875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_168
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 112
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b67af02493405f44cac33313ebf1ce41
+      internalID: 892495988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_169
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 123
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86484c77c797b2340b0d54ee341daafc
+      internalID: -323020217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_170
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 123
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18213ada3fc07774b8ebdaa205867a5c
+      internalID: -506859943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_171
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 123
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24a0bb9c87031f3428a6ce1aaab41737
+      internalID: -1212960910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_172
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 123
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df880a808560de641bab67311da615c4
+      internalID: 784676061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_173
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 123
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caa471f66ff9fc54199ae7f3d54702e0
+      internalID: -955812630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_174
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 123
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9c10de02bd760448afb059e76806c06
+      internalID: -314419249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_175
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 112
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5e66d92350abe5498432f7c966c3faa
+      internalID: 1373834653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_176
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 100
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36f65d07fa287d6478c034cc0dc7f763
+      internalID: -1903142637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_177
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 100
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90e33e01c189c1d45abb8808f073b959
+      internalID: 144673855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_178
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 100
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec63f63bc25acec42b9cd059fd1762db
+      internalID: 1870398079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_179
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 100
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb0b551dc43ce3d4a94abdad5af14704
+      internalID: -797453635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_180
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 100
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dc325ad4b10e464fb532e050dba5e04
+      internalID: 1637486194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_181
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 100
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 333e91f17da211b4886b086b8617b6f4
+      internalID: 1613014976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_182
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 72
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28ff18c6807373c4d84d83dc88dc068b
+      internalID: -445838669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_183
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 72
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2721cd1e18454744e8ff85c83d2b2a73
+      internalID: -1975906658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_184
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 72
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2ad0c5185821904083dcab934a3d550
+      internalID: 1432790704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_185
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 72
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec85db5919ce0624ba0aa4a1f1501f52
+      internalID: 1711621455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_186
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 43
+        width: 29
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f070f531fa8a298408cfdc768b1894a3
+      internalID: 135718644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_187
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 72
+        width: 19
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da73bc5f944e55a419ec87a06f7bbbf8
+      internalID: -1944563157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_188
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 73
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e95f74cdb1e8cae4d9b94d43cc28f51c
+      internalID: 25738456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_189
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 75
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ed6bd69cc9b9c44fa2eec6308a43ec5
+      internalID: 1737896029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_190
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 75
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6cb06ed958aa714399f965678659b8b
+      internalID: 1864510670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_191
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 75
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3f5ada050080f94b851c8e04aaca26d
+      internalID: 1866994719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_192
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 75
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc7fda9a02db5c74eaf9d8d493da30a6
+      internalID: 383617040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_193
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 75
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a27d6aa147a9d0f45a8f012cc4c0ea8b
+      internalID: -250378125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_194
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 75
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 444f55cd5108a4447b937fe9c97ccf9c
+      internalID: 1257744270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_195
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 75
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eaf303d0b933b645a9e9bd5c5b55e4f
+      internalID: 2106058565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_196
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 78
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d50ed946b2680246a55b06566dc482c
+      internalID: 2143849846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_197
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 78
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73d219b0f86788b43b7dceae947e495f
+      internalID: 738552146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_198
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 78
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16ad3274c429917458cff08e28fce3bf
+      internalID: -2053356022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_199
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 78
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6273e9a90af1cdb49ae5ea8d622819bf
+      internalID: -467528331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_200
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 78
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f554d1539073f64e9f01ccef5cd049e
+      internalID: 832055796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_201
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 78
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 612e4b86ad4a83d429610018e3124f17
+      internalID: -257369584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_202
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 42
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5870b5416a44a844895d9dcd32a51d1d
+      internalID: -564218652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_203
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 42
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65fe0020c7797f445ab9b65e2598216d
+      internalID: 1212380481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_204
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 42
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe5e59939c99fd84387a0db9a760d0e7
+      internalID: 835612567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_205
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 42
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3f8b1c4b4994e741914d82b6b590243
+      internalID: -794980285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_206
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 20
+        width: 33
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74d9a94184da47e42943f4de472a6b97
+      internalID: 1331467541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_207
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 54
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dab23d8f77a9514c81362b5f3f11b46
+      internalID: 824700441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_208
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 43
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a64315f5abb070341a6b333db835deab
+      internalID: -929439090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_209
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 43
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6353d6660fcf065428c8984968f1292e
+      internalID: -645005214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_210
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 43
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9df7c38f7c97924b93312598f00494d
+      internalID: -650842967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_211
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 43
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78a4e8e0798ab584980a692608d7cf7b
+      internalID: 241652945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_212
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 43
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 020f36fcd1d02594bb7e61552fc22dfd
+      internalID: 1129227720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_213
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 43
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9317f2f6eaef344792f7d1f26e12613
+      internalID: 515424460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_214
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 43
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb7bb87505b75c848b91da8c146a4bc4
+      internalID: -1027130146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_215
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 58
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a06c1878e76c8048af0318d593b59e2
+      internalID: -1795313702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_216
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 58
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d74f9342ef6247442866443aaea6e283
+      internalID: 973449679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_217
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 58
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9afdea050a1b89d4fa27540de6ffeb9e
+      internalID: -159258648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_218
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 58
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62991061915655c4e8bb603471b7dfc9
+      internalID: 1121602390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_219
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 58
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e17e2fa294adb243b0e0ac5fca6179c
+      internalID: -103621131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_220
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 58
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 539a001e32d4ac24f8e3301a8b6ac69b
+      internalID: 1130882329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_221
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 42
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20e26586698d19046a662eb2d91a5a79
+      internalID: 1851261423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_222
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 42
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d180963781eef4345a3ffe8af6c87b6e
+      internalID: 557237447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_223
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 44
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07bfb30523fe12643a8d647238c33ab4
+      internalID: 2114444518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_224
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 20
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77886074d0842af49b384c166b14d51f
+      internalID: 104070461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_225
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 20
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b1bf7761413ab34c9312a698b6d0155
+      internalID: -909894768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_226
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 20
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 746ed7e831e05a3409cd8cb0bca8bd26
+      internalID: -1953028013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_227
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 20
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9daa3ca65a0634a4188feca62e1effa0
+      internalID: 1943428047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_228
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 20
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8febc41a6e28c7049beae9678ffcde43
+      internalID: -1904676565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathExpl_229
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 20
+        width: 6
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 508aa887d5099d044b71ec80141370bb
+      internalID: 1364774457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      DeathExpl_56: 253746758
+      DeathExpl_2: 722643419
+      DeathExpl_28: 2087234052
+      DeathExpl_45: 1953580114
+      DeathExpl_114: -1628718549
+      DeathExpl_175: 1373834653
+      DeathExpl_116: 771621118
+      DeathExpl_19: -2044890952
+      DeathExpl_140: -1324295711
+      DeathExpl_136: -1312269535
+      DeathExpl_159: 984387773
+      DeathExpl_133: 1313141833
+      DeathExpl_229: 1364774457
+      DeathExpl_87: -897664279
+      DeathExpl_192: 383617040
+      DeathExpl_83: -595630573
+      DeathExpl_111: -865423836
+      DeathExpl_115: 1481864953
+      DeathExpl_193: -250378125
+      DeathExpl_190: 1864510670
+      DeathExpl_43: -544578667
+      DeathExpl_181: 1613014976
+      DeathExpl_69: 1864657839
+      DeathExpl_189: 1737896029
+      DeathExpl_51: 217085616
+      DeathExpl_121: -2056644739
+      DeathExpl_91: -1911656154
+      DeathExpl_99: -863590498
+      DeathExpl_185: 1711621455
+      DeathExpl_53: -1010815797
+      DeathExpl_89: 423954611
+      DeathExpl_122: -559731661
+      DeathExpl_220: 1130882329
+      DeathExpl_161: 1816509763
+      DeathExpl_208: -929439090
+      DeathExpl_197: 738552146
+      DeathExpl_39: -681329960
+      DeathExpl_81: 1203298
+      DeathExpl_132: -64068303
+      DeathExpl_180: 1637486194
+      DeathExpl_205: -794980285
+      DeathExpl_170: -506859943
+      DeathExpl_194: 1257744270
+      DeathExpl_73: -1013206222
+      DeathExpl_85: 596146285
+      DeathExpl_224: 104070461
+      DeathExpl_130: 2060206705
+      DeathExpl_63: -8946866
+      DeathExpl_213: 515424460
+      DeathExpl_144: 88021429
+      DeathExpl_24: 850412724
+      DeathExpl_196: 2143849846
+      DeathExpl_201: -257369584
+      DeathExpl_11: 1493558679
+      DeathExpl_215: -1795313702
+      DeathExpl_219: -103621131
+      DeathExpl_222: 557237447
+      DeathExpl_171: -1212960910
+      DeathExpl_96: -218274836
+      DeathExpl_141: -1469118323
+      DeathExpl_145: -1899970473
+      DeathExpl_164: 963577746
+      DeathExpl_152: 652252327
+      DeathExpl_109: -1620462489
+      DeathExpl_38: -969085564
+      DeathExpl_71: 1966953892
+      DeathExpl_178: 1870398079
+      DeathExpl_47: -1657795303
+      DeathExpl_172: 784676061
+      DeathExpl_6: -772429680
+      DeathExpl_126: 591584923
+      DeathExpl_41: -1831874267
+      DeathExpl_200: 832055796
+      DeathExpl_34: 1472373921
+      DeathExpl_134: -265284216
+      DeathExpl_17: 1042845512
+      DeathExpl_225: -909894768
+      DeathExpl_169: -323020217
+      DeathExpl_27: 937498499
+      DeathExpl_173: -955812630
+      DeathExpl_82: 327890146
+      DeathExpl_207: 824700441
+      DeathExpl_80: 55143832
+      DeathExpl_148: 1758553882
+      DeathExpl_57: 243859536
+      DeathExpl_103: -1330174741
+      DeathExpl_26: 550259463
+      DeathExpl_15: -2108617203
+      DeathExpl_31: -985593304
+      DeathExpl_7: -1775921322
+      DeathExpl_105: 280136152
+      DeathExpl_146: 1627202924
+      DeathExpl_131: -495358714
+      DeathExpl_226: -1953028013
+      DeathExpl_156: -1966298017
+      DeathExpl_88: -562858765
+      DeathExpl_22: -2126326626
+      DeathExpl_188: 25738456
+      DeathExpl_12: 1707782406
+      DeathExpl_50: 761254832
+      DeathExpl_66: -1865320985
+      DeathExpl_75: 2057064671
+      DeathExpl_162: -1929301091
+      DeathExpl_119: -465230431
+      DeathExpl_74: -1366120638
+      DeathExpl_68: -1477311267
+      DeathExpl_204: 835612567
+      DeathExpl_211: 241652945
+      DeathExpl_228: -1904676565
+      DeathExpl_1: -941282853
+      DeathExpl_206: 1331467541
+      DeathExpl_186: 135718644
+      DeathExpl_37: 853435662
+      DeathExpl_212: 1129227720
+      DeathExpl_100: 12811754
+      DeathExpl_10: 646206290
+      DeathExpl_40: 1106738599
+      DeathExpl_101: -426944883
+      DeathExpl_61: 44444759
+      DeathExpl_217: -159258648
+      DeathExpl_86: -1048100535
+      DeathExpl_67: 1430704211
+      DeathExpl_112: 2142564948
+      DeathExpl_9: -1330105767
+      DeathExpl_97: 1795632391
+      DeathExpl_78: -1516068764
+      DeathExpl_147: -225290478
+      DeathExpl_18: -1768838689
+      DeathExpl_184: 1432790704
+      DeathExpl_84: 720447517
+      DeathExpl_92: 765679419
+      DeathExpl_183: -1975906658
+      DeathExpl_139: 1954145565
+      DeathExpl_203: 1212380481
+      DeathExpl_14: 1783907272
+      DeathExpl_46: -1546210504
+      DeathExpl_195: 2106058565
+      DeathExpl_127: 6147512
+      DeathExpl_128: -509013750
+      DeathExpl_138: -529294463
+      DeathExpl_125: 26342059
+      DeathExpl_199: -467528331
+      DeathExpl_155: 1504633827
+      DeathExpl_21: -323099029
+      DeathExpl_52: -1704444556
+      DeathExpl_124: 1805808007
+      DeathExpl_209: -645005214
+      DeathExpl_163: -2125229374
+      DeathExpl_113: -1937571617
+      DeathExpl_160: 1933746012
+      DeathExpl_187: -1944563157
+      DeathExpl_108: 1231413743
+      DeathExpl_149: -1085418639
+      DeathExpl_90: 937449375
+      DeathExpl_54: -1633127040
+      DeathExpl_106: 660826441
+      DeathExpl_168: 892495988
+      DeathExpl_210: -650842967
+      DeathExpl_25: -318540398
+      DeathExpl_120: -1809313206
+      DeathExpl_98: -620828186
+      DeathExpl_198: -2053356022
+      DeathExpl_64: 1103399658
+      DeathExpl_49: -41567577
+      DeathExpl_32: -1436619448
+      DeathExpl_76: -1911984609
+      DeathExpl_157: 1477975179
+      DeathExpl_3: -366730017
+      DeathExpl_42: 1634653414
+      DeathExpl_107: 1505937783
+      DeathExpl_179: -797453635
+      DeathExpl_117: -1623071127
+      DeathExpl_93: -249285688
+      DeathExpl_5: -45760967
+      DeathExpl_29: -635077122
+      DeathExpl_129: -296169571
+      DeathExpl_102: 1425596814
+      DeathExpl_166: 1552756
+      DeathExpl_59: -1315090617
+      DeathExpl_177: 144673855
+      DeathExpl_151: 674926899
+      DeathExpl_174: -314419249
+      DeathExpl_33: -257985201
+      DeathExpl_150: -76813481
+      DeathExpl_218: 1121602390
+      DeathExpl_137: 1275181390
+      DeathExpl_191: 1866994719
+      DeathExpl_58: 1196554195
+      DeathExpl_60: 972413312
+      DeathExpl_23: -1279519471
+      DeathExpl_94: 633204721
+      DeathExpl_70: -139378801
+      DeathExpl_154: 1723751053
+      DeathExpl_143: -385594874
+      DeathExpl_55: -164512301
+      DeathExpl_142: -1720510738
+      DeathExpl_158: -564982414
+      DeathExpl_30: 476795631
+      DeathExpl_118: 1357237918
+      DeathExpl_227: 1943428047
+      DeathExpl_77: 339786160
+      DeathExpl_165: -1468691282
+      DeathExpl_104: -1281057657
+      DeathExpl_44: -525215699
+      DeathExpl_8: 1353599709
+      DeathExpl_72: 754652261
+      DeathExpl_135: 256069213
+      DeathExpl_221: 1851261423
+      DeathExpl_223: 2114444518
+      DeathExpl_153: -1580823911
+      DeathExpl_62: 850787323
+      DeathExpl_176: -1903142637
+      DeathExpl_20: 301703696
+      DeathExpl_16: -1304172135
+      DeathExpl_95: 1048529713
+      DeathExpl_182: -445838669
+      DeathExpl_214: -1027130146
+      DeathExpl_65: 91645205
+      DeathExpl_123: 1457947266
+      DeathExpl_167: 1952631875
+      DeathExpl_202: -564218652
+      DeathExpl_4: 225444957
+      DeathExpl_13: -964693099
+      DeathExpl_0: 224135268
+      DeathExpl_110: 424352002
+      DeathExpl_79: 1610588023
+      DeathExpl_48: 651566350
+      DeathExpl_36: 831029635
+      DeathExpl_216: 973449679
+      DeathExpl_35: 1151260431
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

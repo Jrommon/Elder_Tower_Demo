@@ -25,8 +25,9 @@ public class PlayerMovement : MonoBehaviour
     private State _state = State.IDLE;
     private MovementState _movementState = MovementState.STAND;
     private Vector2 _directionLooking = Vector2.right;
-    private bool _jumpPowerUp;
-    private bool _doubleJump;
+    [SerializeField]private bool _jumpPowerUp;
+    [SerializeField] private bool _doubleJump;
+    private int jumpNumber = 0;
     private bool _magicReady = true;
     private bool _isMele = true;
 
@@ -146,6 +147,7 @@ public class PlayerMovement : MonoBehaviour
                 {
                     case MovementState.STAND:
                         _doubleJump = _jumpPowerUp;
+                        jumpNumber = 0;
                         if (Input.GetKey(KeyCode.E))
                             _state = State.ATTACKING;
                         
@@ -169,6 +171,11 @@ public class PlayerMovement : MonoBehaviour
                         break;
                     
                     case MovementState.JUMP:
+                        jumpNumber++;
+                        if (jumpNumber>1)
+                        {
+                            _doubleJump = false;
+                        }
                         _animator.SetBool(_jumpingAnimatorParameter, true);
                         _rigidbody2D.velocity += new Vector2(0, jumpForce);
                         _movementState = MovementState.FALL;

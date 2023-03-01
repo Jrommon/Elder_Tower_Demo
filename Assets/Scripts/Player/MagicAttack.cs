@@ -6,6 +6,7 @@ using UnityEngine;
 [RequireComponent(typeof(SpriteRenderer))]
 public class MagicAttack : MonoBehaviour
 {
+    [SerializeField]
     private Vector2 _movement;
     private Vector3 _scale;
     private SpriteRenderer _spriteRenderer;

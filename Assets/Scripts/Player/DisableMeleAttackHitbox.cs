@@ -7,5 +7,6 @@ public class DisableMeleAttackHitbox : StateMachineBehaviour
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) 
     {
         animator.GetComponent<PlayerMovement>().DisableMeleAttackHitbox();
+        animator.GetComponent<PlayerMovement>().EnableMagic();
     }
 }

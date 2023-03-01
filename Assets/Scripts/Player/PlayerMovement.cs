@@ -10,15 +10,24 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private GameObject fireBallAttack, thunderAttack;
     [SerializeField] private Transform magicAttackPosition;
+    [SerializeField] private Transform respawnPosition;
+    
+    [Header("Indicators")]
+    [SerializeField] private SpriteRenderer magicReadyIndicator;
+    [SerializeField] private SpriteRenderer weaponsReadyIndicator;
+    [SerializeField] private Sprite sword, magic;
+    
+    [SerializeField] private float speed = 4, jumpForce = 5;
 
-    [SerializeField]
-    private float speed = 4, jumpForce = 5;
-
+    [Header("Life")] 
+    [SerializeField] private int health = 3;
+    
     private State _state = State.IDLE;
     private MovementState _movementState = MovementState.STAND;
     private Vector2 _directionLooking = Vector2.right;
     private bool _jumpPowerUp;
     private bool _doubleJump;
+    private bool _magicReady = true;
     private bool _isMele = true;
 
     private Rigidbody2D _rigidbody2D;
@@ -80,6 +89,9 @@ public class PlayerMovement : MonoBehaviour
 
         // _animator.SetInteger(_attackTypeAnimatorParameter, 0);
 
+        magicReadyIndicator.enabled = _magicReady;
+        weaponsReadyIndicator.sprite = _isMele ? sword : magic;
+        
         AttackType attackType = AttackInput();
         if (Input.GetKeyDown(KeyCode.T)) 
                 ToggleAttack();
@@ -180,15 +192,10 @@ public class PlayerMovement : MonoBehaviour
                         else
                         {
                             _animator.SetInteger(_attackTypeAnimatorParameter, 3);
-                            var fire = Instantiate(
-                                fireBallAttack,
-                                new Vector3(
-                                    magicAttackPosition.localPosition.x * _directionLooking.x,
-                                    magicAttackPosition.localPosition.y,
-                                    0),
-                                Quaternion.identity);
-                            MagicAttack magicAttack = fire.GetComponent<MagicAttack>();
-                            magicAttack.Movement = 5 * _directionLooking;
+                            if (_magicReady)
+                            {
+                                FireballAttack();
+                            }
                         }
                         break;
                     
@@ -200,16 +207,11 @@ public class PlayerMovement : MonoBehaviour
                         else
                         {
                             _animator.SetInteger(_attackTypeAnimatorParameter, 3);
-                            
-                            var fire = Instantiate(
-                                thunderAttack,
-                                new Vector3(
-                                    magicAttackPosition.localPosition.x * _directionLooking.x,
-                                    magicAttackPosition.localPosition.y,
-                                    0),
-                                Quaternion.identity);
-                            MagicAttack magicAttack = fire.GetComponent<MagicAttack>();
-                            magicAttack.Movement = 5 * _directionLooking;
+
+                            if (_magicReady)
+                            {
+                                ThunderAttack();
+                            }
 
                         }
                         break;
@@ -218,15 +220,10 @@ public class PlayerMovement : MonoBehaviour
                         if (_isMele)
                         {
                             _animator.SetInteger(_attackTypeAnimatorParameter, 3);
-                            var fire = Instantiate(
-                                fireBallAttack,
-                                new Vector3(
-                                    magicAttackPosition.localPosition.x * _directionLooking.x,
-                                    magicAttackPosition.localPosition.y,
-                                0),
-                                Quaternion.identity);
-                            MagicAttack magicAttack = fire.GetComponent<MagicAttack>();
-                            magicAttack.Movement = 5 * _directionLooking;
+                            if (_magicReady)
+                            {
+                                FireballAttack();
+                            }
                         }
                         else
                         {
@@ -244,17 +241,95 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    private void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.collider.CompareTag("Void"))
+        {
+            substractHealth(health);
+        }
+        else if (col.collider.CompareTag("Enemy"))
+        {
+            substractHealth(1);
+        }
+    }
+
+    private void substractHealth(int healthTaken)
+    {
+        health -= healthTaken;
+
+        /*_animator.SetBool(_hitAnimatorParameter, true);
+        _animator.SetInteger(_attackTypeAnimatorParameter, 99);
+        
+        if (health <= 0)
+        {
+            _animator.SetBool(_isDeadAnimatorParameter, true);
+        }*/
+
+        if (health <= 0)
+        {
+            _animator.Play("Player_Dead");
+        }
+        else
+        {
+            _animator.Play("Player_Take_Hit");
+        }
+    }
+
+    private void Respawn()
+    {
+        transform.position = respawnPosition.position;
+        health = 3;
+    }
+
+    private void FireballAttack()
+    {
+        var fire = Instantiate(
+            fireBallAttack,
+            new Vector3(
+                magicAttackPosition.position.x,
+                magicAttackPosition.position.y,
+                0),
+            Quaternion.identity);
+        MagicAttack magicAttack = fire.GetComponent<MagicAttack>();
+        magicAttack.Movement = 1 * _directionLooking;
+        if (_directionLooking.x < 0)
+        {
+            magicAttack.Flip = true;
+        }
+
+        _magicReady = false;
+    }
+    
+    private void ThunderAttack()
+    {
+        var thunder = Instantiate(
+            thunderAttack,
+            new Vector3(
+                magicAttackPosition.position.x,
+                magicAttackPosition.position.y,
+                0),
+            Quaternion.identity);
+        MagicAttack magicAttack = thunder.GetComponent<MagicAttack>();
+        magicAttack.Movement = 1 * _directionLooking;
+        if (_directionLooking.x < 0)
+        {
+            magicAttack.Flip = true;
+        }
+
+        _magicReady = false;
+    }
+
     private void ToggleAttack() => _isMele = !_isMele;
     
     private void EnableMeleNormalAttackHitbox1() => _meleNormalAttackHitbox1.SetActive(true);
     private void EnableMeleNormalAttackHitbox2() => _meleNormalAttackHitbox2.SetActive(true);
-    private void EnableHeavyAttackHitbox1() => _meleNormalAttackHitbox1.SetActive(true);
+    private void EnableHeavyAttackHitbox1() => _meleHeavyAttackHitbox1.SetActive(true);
     private void EnableHeavyAttackHitbox2() => _meleHeavyAttackHitbox2.SetActive(true);
     public void DisableMeleAttackHitbox()
     {
         _meleNormalAttackHitbox1.SetActive(false);
         _meleNormalAttackHitbox2.SetActive(false);
-        _meleHeavyAttackHitbox2.SetActive(false);
+        _meleHeavyAttackHitbox1.SetActive(false);
         _meleHeavyAttackHitbox2.SetActive(false);
     }
 
@@ -294,9 +369,19 @@ public class PlayerMovement : MonoBehaviour
             return AttackType.HEAVY;
 
         if (Input.GetKey(KeyCode.F))
+        {
+            Debug.Log("Fireball");
             return AttackType.SECONDARY;
+        }
+
+        
 
         return AttackType.NONE;
+    }
+    
+    public void EnableMagic()
+    {
+        _magicReady = true;
     }
     
     private void LookRight(bool right)

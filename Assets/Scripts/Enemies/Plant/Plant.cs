@@ -38,16 +38,16 @@ public class Plant : EnemiesGeneral
         }
     }
 
-    //Instancia  una bala, se ejecuta al final de la animación
+    //Instancia  una bala, se ejecuta al final de la animaciï¿½n
     public void shoot()
     {
         Instantiate(bullet, transform.position, transform.rotation);
     }
 
-    //Hace una animación de ataque a melee cuando colisiona con el player
+    //Hace una animaciï¿½n de ataque a melee cuando colisiona con el player
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player") || collision.gameObject.CompareTag("PlayerAttack"))
         {
             _animator.SetTrigger("Melee trigger");
         }
@@ -65,4 +65,5 @@ public class Plant : EnemiesGeneral
             transform.rotation = new Quaternion(transform.rotation.x, 0, transform.rotation.z, 0);
         }
     }
+    
 }

@@ -31,11 +31,29 @@ public class EnemiesGeneral : MonoBehaviour
         Destroy(gameObject);
     }
 
-    private void OnCollisionEnter2D(Collision2D other)
+    private void OnTriggerEnter2D(Collider2D col)
     {
-        if (other.collider.CompareTag("PlayerAttack"))
+        if (col.CompareTag("PlayerAttack"))
         {
             hp--;
+
+            if (hp <= 0)
+            {
+                die();
+            }
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.collider.CompareTag("PlayerAttack") || col.collider.CompareTag("Void"))
+        {
+            hp--;
+
+            if (hp <= 0)
+            {
+                die();
+            }
         }
     }
 }

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -51,7 +52,16 @@ public class plantbullet : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.CompareTag("Player") || collision.gameObject.CompareTag("Floor"))
+        if(collision.gameObject.CompareTag("Player") || collision.gameObject.CompareTag("Floor")|| collision.gameObject.CompareTag("PlayerAttack"))
+        {
+            _animator.SetTrigger("Die");
+            _isDed=true;
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        if(col.gameObject.CompareTag("PlayerAttack"))
         {
             _animator.SetTrigger("Die");
             _isDed=true;

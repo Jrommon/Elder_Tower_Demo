@@ -117,32 +117,37 @@ public class PlayerMovement : MonoBehaviour
                 };
 
 
-
+                
                 // Update direction if can move
-                directionMovement = ManageMovementInputs().normalized;
+                if(health >0)
+                {
+                    directionMovement = ManageMovementInputs().normalized;
+
+                    if (directionMovement.x != 0)
+                    {
+                        // Walk animation
+                        _animator.SetBool(_walkingAnimatorParameter, _rigidbody2D.velocity.y == 0);
+
+                        // Movement
+                        transform.Translate(new Vector2(directionMovement.x, 0) * (speed * Time.deltaTime));
+                        LookRight(directionMovement.x > 0);
+                    }
+                    else
+                    {
+                        _animator.SetBool(_walkingAnimatorParameter, false);
+                        _rigidbody2D.velocity = new Vector2(0, _rigidbody2D.velocity.y);
+                    }
+
+                    // Jump
+                    if (Input.GetKeyDown(KeyCode.Space))
+                    {
+                        if (_movementState is MovementState.WALK or MovementState.STAND || _doubleJump)
+                            _movementState = MovementState.JUMP;
+
+                    }
+
+                }
                 
-                if (directionMovement.x != 0)
-                {
-                    // Walk animation
-                    _animator.SetBool(_walkingAnimatorParameter, _rigidbody2D.velocity.y == 0);
-                    
-                    // Movement
-                    transform.Translate(new Vector2(directionMovement.x, 0) * (speed * Time.deltaTime));
-                    LookRight(directionMovement.x > 0);
-                }
-                else
-                {
-                    _animator.SetBool(_walkingAnimatorParameter, false);
-                    _rigidbody2D.velocity = new Vector2(0, _rigidbody2D.velocity.y);
-                }
-                
-                // Jump
-                if (Input.GetKeyDown(KeyCode.Space))
-                {
-                    if (_movementState is MovementState.WALK or MovementState.STAND || _doubleJump)
-                        _movementState = MovementState.JUMP;
-                    
-                }
                 
                 switch (_movementState)
                 {

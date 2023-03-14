@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private GameObject fireBallAttack, thunderAttack;
     [SerializeField] private Transform magicAttackPosition;
     [SerializeField] private Transform respawnPosition;
+    [SerializeField] private int magicSpeed;
     
     [Header("Indicators")]
     [SerializeField] private SpriteRenderer magicReadyIndicator;
@@ -298,7 +299,7 @@ public class PlayerMovement : MonoBehaviour
                 0),
             Quaternion.identity);
         MagicAttack magicAttack = fire.GetComponent<MagicAttack>();
-        magicAttack.Movement = 1 * _directionLooking;
+        magicAttack.Movement = magicSpeed * _directionLooking;
         if (_directionLooking.x < 0)
         {
             magicAttack.Flip = true;
@@ -317,7 +318,7 @@ public class PlayerMovement : MonoBehaviour
                 0),
             Quaternion.identity);
         MagicAttack magicAttack = thunder.GetComponent<MagicAttack>();
-        magicAttack.Movement = 1 * _directionLooking;
+        magicAttack.Movement = magicSpeed * _directionLooking;
         if (_directionLooking.x < 0)
         {
             magicAttack.Flip = true;

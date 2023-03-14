@@ -178,6 +178,7 @@ public class PlayerMovement : MonoBehaviour
                             _doubleJump = false;
                         }
                         _animator.SetBool(_jumpingAnimatorParameter, true);
+                        _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, 0);
                         _rigidbody2D.velocity += new Vector2(0, jumpForce);
                         _movementState = MovementState.FALL;
                         break;

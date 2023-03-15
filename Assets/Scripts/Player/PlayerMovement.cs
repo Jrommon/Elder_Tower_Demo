@@ -10,6 +10,18 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private GameObject fireBallAttack, thunderAttack;
     [SerializeField] private Transform magicAttackPosition;
+<<<<<<< Updated upstream
+=======
+    [FormerlySerializedAs("respawnPosition")] [SerializeField] private Transform respawn;
+    [SerializeField] private int magicSpeed;
+    
+    [Header("Indicators")]
+    [SerializeField] private SpriteRenderer magicReadyIndicator;
+    [SerializeField] private SpriteRenderer weaponsReadyIndicator;
+    [SerializeField] private Sprite sword, magic;
+    
+    [SerializeField] private float speed = 4, jumpForce = 5;
+>>>>>>> Stashed changes
 
     [SerializeField]
     private float speed = 4, jumpForce = 5;
@@ -31,12 +43,14 @@ public class PlayerMovement : MonoBehaviour
     private GameObject _meleHeavyAttackHitbox1;
     private GameObject _meleHeavyAttackHitbox2;
 
-
+    private readonly double fallThreshold = -0.1;
+    
     private readonly int _walkingAnimatorParameter = Animator.StringToHash("Walking");
     private readonly int _attackTypeAnimatorParameter = Animator.StringToHash("AttackType");
     private readonly int _isDeadAnimatorParameter = Animator.StringToHash("IsDead");
     private readonly int _hitAnimatorParameter = Animator.StringToHash("Hit");
     private readonly int _jumpingAnimatorParameter = Animator.StringToHash("Jumping");
+    private readonly int _fallingAnimatorParameter = Animator.StringToHash("Falling");
     private readonly int _attackAnimatorParameter = Animator.StringToHash("Attack");
 
     public bool JumpPowerUp
@@ -72,6 +86,7 @@ public class PlayerMovement : MonoBehaviour
         Vector2 directionMovement = Vector3.zero;
         _animator.SetBool(_walkingAnimatorParameter, false);
         _animator.SetBool(_jumpingAnimatorParameter, false);
+        _animator.SetBool(_fallingAnimatorParameter, false);
         _animator.SetBool(_hitAnimatorParameter, false);
         _animator.SetBool(_isDeadAnimatorParameter, false);
         _animator.SetInteger(_attackTypeAnimatorParameter, 0);
@@ -81,28 +96,33 @@ public class PlayerMovement : MonoBehaviour
         // _animator.SetInteger(_attackTypeAnimatorParameter, 0);
 
         AttackType attackType = AttackInput();
-        if (Input.GetKeyDown(KeyCode.T)) 
+        
+        if (Input.GetMouseButtonDown(2)) 
                 ToggleAttack();
 
         switch (_state)
         {
             case State.IDLE:
                 _rigidbody2D.isKinematic = true;
-
-                _state = State.MOVING;
-                break;
-            
-            case State.MOVING:
-                _rigidbody2D.isKinematic = false;
-
+                
                 _state = attackType switch
                 {
                     AttackType.NONE => State.MOVING,
                     AttackType.NORMAL or AttackType.HEAVY or AttackType.SECONDARY => State.ATTACKING,
                     _ => _state
                 };
+                
+                break;
 
+            case State.MOVING:
+                _rigidbody2D.isKinematic = false;
 
+                _state = attackType switch
+                {
+                    AttackType.NONE => State.MOVING,
+                    AttackType.NORMAL or AttackType.HEAVY or AttackType.SECONDARY => State.IDLE,
+                    _ => _state
+                };
 
                 // Update direction if can move
                 directionMovement = ManageMovementInputs().normalized;
@@ -125,14 +145,24 @@ public class PlayerMovement : MonoBehaviour
                 // Jump
                 if (Input.GetKey(KeyCode.Space))
                 {
-                    if (_movementState is MovementState.WALK or MovementState.STAND || _doubleJump)
+                    if (_movementState is MovementState.JUMP or MovementState.FALL)
+                    {
                         _movementState = MovementState.JUMP;
+                        if (_jumpPowerUp)
+                            _doubleJump = true;
+                    }
+                    if (_movementState is MovementState.WALK or MovementState.STAND)
+                        _movementState = MovementState.JUMP;
+                    
+                    
+
                     
                 }
                 
                 switch (_movementState)
                 {
                     case MovementState.STAND:
+<<<<<<< Updated upstream
                         _doubleJump = _jumpPowerUp;
                         if (Input.GetKey(KeyCode.E))
                             _state = State.ATTACKING;
@@ -140,26 +170,51 @@ public class PlayerMovement : MonoBehaviour
                         
                         if (_rigidbody2D.velocity.y < 0)
                         {
+=======
+                        jumpNumber = 0;
+                        _doubleJump = false;
+
+                        if (_rigidbody2D.velocity.y < fallThreshold)
+>>>>>>> Stashed changes
                             _movementState = MovementState.FALL;
-                        }
+                        
                         break;
 
                     case MovementState.FALL:
-                        _animator.SetBool(_jumpingAnimatorParameter, true);
-
-                        // Comprobar si esta sobre una superficie, sino se engancha en paredes.
+                        _animator.SetBool(_fallingAnimatorParameter, true);
+                        
+                        // TODO: Comprobar si esta sobre una superficie, sino se engancha en paredes.
                         if (_rigidbody2D.velocity.y == 0)
-                        {
                             _movementState = MovementState.STAND;
-
-                        }
-
+                        
                         break;
                     
                     case MovementState.JUMP:
                         _animator.SetBool(_jumpingAnimatorParameter, true);
+<<<<<<< Updated upstream
                         _rigidbody2D.velocity += new Vector2(0, jumpForce);
                         _movementState = MovementState.FALL;
+=======
+
+                        if (jumpNumber == 0)
+                        {
+                            jumpNumber++;
+                            _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, 0);
+                            _rigidbody2D.velocity += new Vector2(0, jumpForce);
+                        }
+
+                        if (jumpNumber == 1 && _doubleJump)
+                        {
+                            _animator.SetBool(_jumpingAnimatorParameter, true);
+                            print("double");
+                            jumpNumber++;
+                            _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, 0);
+                            _rigidbody2D.velocity += new Vector2(0, jumpForce);
+                        }
+                        
+                        if (_rigidbody2D.velocity.y <= 0) _movementState = MovementState.FALL;
+                        
+>>>>>>> Stashed changes
                         break;
 
                     default:
@@ -244,6 +299,87 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+<<<<<<< Updated upstream
+=======
+    private void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.collider.CompareTag("Void"))
+        {
+            SubtractHealth(health);
+        }
+        else if (col.collider.CompareTag("Enemy"))
+        {
+            SubtractHealth(1);
+        }
+    }
+
+    private void SubtractHealth(int healthTaken)
+    {
+        health -= healthTaken;
+
+        /*_animator.SetBool(_hitAnimatorParameter, true);
+        _animator.SetInteger(_attackTypeAnimatorParameter, 99);
+        
+        if (health <= 0)
+        {
+            _animator.SetBool(_isDeadAnimatorParameter, true);
+        }*/
+
+        if (health <= 0)
+        {
+            _animator.Play("Player_Dead");
+        }
+        else
+        {
+            _animator.Play("Player_Take_Hit");
+        }
+    }
+
+    private void Respawn()
+    {
+        transform.position = respawn.position;
+        health = 3;
+    }
+
+    private void FireballAttack()
+    {
+        var fire = Instantiate(
+            fireBallAttack,
+            new Vector3(
+                magicAttackPosition.position.x,
+                magicAttackPosition.position.y,
+                0),
+            Quaternion.identity);
+        MagicAttack magicAttack = fire.GetComponent<MagicAttack>();
+        magicAttack.Movement = magicSpeed * _directionLooking;
+        if (_directionLooking.x < 0)
+        {
+            magicAttack.Flip = true;
+        }
+
+        _magicReady = false;
+    }
+    
+    private void ThunderAttack()
+    {
+        var thunder = Instantiate(
+            thunderAttack,
+            new Vector3(
+                magicAttackPosition.position.x,
+                magicAttackPosition.position.y,
+                0),
+            Quaternion.identity);
+        MagicAttack magicAttack = thunder.GetComponent<MagicAttack>();
+        magicAttack.Movement = magicSpeed * _directionLooking;
+        if (_directionLooking.x < 0)
+        {
+            magicAttack.Flip = true;
+        }
+
+        _magicReady = false;
+    }
+
+>>>>>>> Stashed changes
     private void ToggleAttack() => _isMele = !_isMele;
     
     private void EnableMeleNormalAttackHitbox1() => _meleNormalAttackHitbox1.SetActive(true);
@@ -262,38 +398,39 @@ public class PlayerMovement : MonoBehaviour
     {
         Vector2 direction = Vector2.zero;
         if (Input.GetKey(KeyCode.W))
-        {
             direction += Vector2.up;
-        }
+        
         
         if (Input.GetKey(KeyCode.S))
-        {
             direction += Vector2.down;
-        }
+        
         
         if (Input.GetKey(KeyCode.A))
-        {
             direction += Vector2.left;
-        }
+        
         
         if (Input.GetKey(KeyCode.D))
-        {
             direction += Vector2.right;
-        }
-
+        
         return direction;
     }
 
     private AttackType AttackInput()
     {
-        if (Input.GetKey(KeyCode.E))
+        if (Input.GetMouseButton(0))
             return AttackType.NORMAL;
         
 
-        if (Input.GetKey(KeyCode.R))
+        if (Input.GetMouseButton(1))
             return AttackType.HEAVY;
 
+<<<<<<< Updated upstream
         if (Input.GetKey(KeyCode.F))
+=======
+        if (Input.GetKey(KeyCode.E))
+        {
+            Debug.Log("Fireball");
+>>>>>>> Stashed changes
             return AttackType.SECONDARY;
 
         return AttackType.NONE;

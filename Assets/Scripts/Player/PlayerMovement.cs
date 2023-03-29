@@ -48,6 +48,7 @@ public class PlayerMovement : MonoBehaviour
     private readonly int _isDeadAnimatorParameter = Animator.StringToHash("IsDead");
     private readonly int _hitAnimatorParameter = Animator.StringToHash("Hit");
     private readonly int _jumpingAnimatorParameter = Animator.StringToHash("Jumping");
+    private readonly int _fallingAnimatorParameter = Animator.StringToHash("Falling");
     private readonly int _attackAnimatorParameter = Animator.StringToHash("Attack");
 
     public bool JumpPowerUp
@@ -83,19 +84,16 @@ public class PlayerMovement : MonoBehaviour
         Vector2 directionMovement = Vector3.zero;
         _animator.SetBool(_walkingAnimatorParameter, false);
         _animator.SetBool(_jumpingAnimatorParameter, false);
+        _animator.SetBool(_fallingAnimatorParameter, false);
         _animator.SetBool(_hitAnimatorParameter, false);
         _animator.SetBool(_isDeadAnimatorParameter, false);
         _animator.SetInteger(_attackTypeAnimatorParameter, 0);
-
-        // _animator.SetTrigger(_attackAnimatorParameter);
-
-        // _animator.SetInteger(_attackTypeAnimatorParameter, 0);
 
         magicReadyIndicator.enabled = _magicReady;
         weaponsReadyIndicator.sprite = _isMele ? sword : magic;
         
         AttackType attackType = AttackInput();
-        if (Input.GetKeyDown(KeyCode.T)) 
+        if (Input.GetMouseButtonDown(2))
                 ToggleAttack();
 
         switch (_state)
@@ -141,8 +139,16 @@ public class PlayerMovement : MonoBehaviour
                     // Jump
                     if (Input.GetKeyDown(KeyCode.Space))
                     {
-                        if (_movementState is MovementState.WALK or MovementState.STAND || _doubleJump)
+                        if (_movementState is MovementState.WALK or MovementState.STAND)
                             _movementState = MovementState.JUMP;
+
+                        if ((_movementState is MovementState.FALL or MovementState.JUMP) && _jumpPowerUp && jumpNumber <= 1)
+                        {
+                            if (jumpNumber == 1)
+                                _doubleJump = true;
+                            
+                            _movementState = MovementState.JUMP;
+                        }
 
                     }
 
@@ -152,40 +158,47 @@ public class PlayerMovement : MonoBehaviour
                 switch (_movementState)
                 {
                     case MovementState.STAND:
-                        _doubleJump = _jumpPowerUp;
+                        _doubleJump = false;
                         jumpNumber = 0;
                         if (Input.GetKey(KeyCode.E))
                             _state = State.ATTACKING;
                         
                         
                         if (_rigidbody2D.velocity.y < 0)
-                        {
                             _movementState = MovementState.FALL;
-                        }
+                        
                         break;
 
                     case MovementState.FALL:
-                        _animator.SetBool(_jumpingAnimatorParameter, true);
+                        _animator.SetBool(_fallingAnimatorParameter, true);
 
-                        // Comprobar si esta sobre una superficie, sino se engancha en paredes.
+                        // Comprobar si esta sobre una superficie, si no se engancha en paredes.
                         if (_rigidbody2D.velocity.y == 0)
-                        {
                             _movementState = MovementState.STAND;
-
-                        }
-
+                        
                         break;
                     
                     case MovementState.JUMP:
-                        jumpNumber++;
-                        if (jumpNumber>1)
-                        {
-                            _doubleJump = false;
-                        }
                         _animator.SetBool(_jumpingAnimatorParameter, true);
-                        _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, 0);
-                        _rigidbody2D.velocity += new Vector2(0, jumpForce);
-                        _movementState = MovementState.FALL;
+                        switch (jumpNumber)
+                        {
+                            case 0:
+                                jumpNumber++;
+                                _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, 0);
+                                _rigidbody2D.velocity += new Vector2(0, jumpForce);
+                                break;
+                            
+                            case 1 when _doubleJump:
+                                jumpNumber++;
+                                _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, 0);
+                                _rigidbody2D.velocity += new Vector2(0, jumpForce);
+                                break;
+                        }
+
+                        if (_rigidbody2D.velocity.y <= 0)
+                            _movementState = MovementState.FALL;
+
+                        
                         break;
 
                     default:
@@ -375,14 +388,14 @@ public class PlayerMovement : MonoBehaviour
 
     private AttackType AttackInput()
     {
-        if (Input.GetKey(KeyCode.E))
+        if (Input.GetMouseButton(0))
             return AttackType.NORMAL;
         
 
-        if (Input.GetKey(KeyCode.R))
+        if (Input.GetMouseButton(1))
             return AttackType.HEAVY;
 
-        if (Input.GetKey(KeyCode.F))
+        if (Input.GetKey(KeyCode.E))
         {
             Debug.Log("Fireball");
             return AttackType.SECONDARY;

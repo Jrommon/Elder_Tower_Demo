@@ -3,11 +3,15 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.Serialization;
 
 [RequireComponent(typeof(Rigidbody2D), typeof(BoxCollider2D))]
 public class PlayerMovement : MonoBehaviour
 {
+
+    private Inputs _inputs;
+    
     [SerializeField] private GameObject fireBallAttack, thunderAttack;
     [SerializeField] private Transform magicAttackPosition;
     [SerializeField] private Transform respawnPosition;
@@ -28,9 +32,10 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 _directionLooking = Vector2.right;
     [SerializeField]private bool _jumpPowerUp;
     [SerializeField] private bool _doubleJump;
-    private int jumpNumber = 0;
+    private int _jumpNumber = 0;
     private bool _magicReady = true;
     private bool _isMele = true;
+    private bool _jump;
 
     private Rigidbody2D _rigidbody2D;
     private Animator _animator;
@@ -62,6 +67,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Awake()
     {
+        _inputs = new Inputs();
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
         _scale = transform.localScale;
@@ -70,6 +76,46 @@ public class PlayerMovement : MonoBehaviour
         _meleNormalAttackHitbox2 = transform.GetChild(1).gameObject;
         _meleHeavyAttackHitbox1 = transform.GetChild(2).gameObject;
         _meleHeavyAttackHitbox2 = transform.GetChild(3).gameObject;
+    }
+
+    private void OnEnable()
+    {
+        _inputs.Enable();
+        _inputs.Game.Movement.performed += OnMovePerform;
+        _inputs.Game.Movement.canceled += OnMoveCancell;
+        _inputs.Game.Jump.performed += OnJumpPerform;
+    }
+
+    private void OnDisable()
+    {
+        _inputs.Game.Movement.performed -= OnMovePerform;
+        _inputs.Game.Movement.canceled -= OnMoveCancell;
+        _inputs.Game.Jump.performed -= OnJumpCancell;
+        _inputs.Disable();
+    }
+
+    private void OnMovePerform(InputAction.CallbackContext value)
+    {
+        var dir = value.ReadValue<float>();
+        print(dir);
+        direction = new Vector2(dir, direction.y);
+    }
+
+    private void OnMoveCancell(InputAction.CallbackContext value)
+    {
+        direction = Vector2.zero;
+    }
+
+    private void OnJumpPerform(InputAction.CallbackContext value)
+    {
+        _jump = value.performed;
+
+    }
+    
+    private void OnJumpCancell(InputAction.CallbackContext value)
+    {
+        _jump = false;
+
     }
 
     // Start is called before the first frame update
@@ -84,6 +130,8 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        print(_jumpNumber);
+        
         Vector2 directionMovement = Vector3.zero;
         _animator.SetBool(_walkingAnimatorParameter, false);
         _animator.SetBool(_jumpingAnimatorParameter, false);
@@ -140,20 +188,23 @@ public class PlayerMovement : MonoBehaviour
                     }
 
                     // Jump
-                    if (Input.GetKeyDown(KeyCode.Space))
+                    // if (Input.GetKeyDown(KeyCode.Space))
+                    if (_jump)
                     {
                         if (_movementState is MovementState.WALK or MovementState.STAND)
                             _movementState = MovementState.JUMP;
 
-                        if ((_movementState is MovementState.FALL or MovementState.JUMP) && _jumpPowerUp && jumpNumber <= 1)
+                        if ((_movementState is MovementState.FALL or MovementState.JUMP) && _jumpPowerUp && _jumpNumber <= 1)
                         {
-                            if (jumpNumber == 1)
+                            if (_jumpNumber == 1)
                                 _doubleJump = true;
                             
                             _movementState = MovementState.JUMP;
                         }
 
                     }
+
+                    _jump = false;
 
                 }
                 
@@ -162,7 +213,7 @@ public class PlayerMovement : MonoBehaviour
                 {
                     case MovementState.STAND:
                         _doubleJump = false;
-                        jumpNumber = 0;
+                        _jumpNumber = 0;
                         if (Input.GetKey(KeyCode.E))
                             _state = State.ATTACKING;
                         
@@ -183,16 +234,16 @@ public class PlayerMovement : MonoBehaviour
                     
                     case MovementState.JUMP:
                         _animator.SetBool(_jumpingAnimatorParameter, true);
-                        switch (jumpNumber)
+                        switch (_jumpNumber)
                         {
                             case 0:
-                                jumpNumber++;
+                                _jumpNumber++;
                                 _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, 0);
                                 _rigidbody2D.velocity += new Vector2(0, jumpForce);
                                 break;
                             
                             case 1 when _doubleJump:
-                                jumpNumber++;
+                                _jumpNumber++;
                                 _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, 0);
                                 _rigidbody2D.velocity += new Vector2(0, jumpForce);
                                 break;
@@ -386,16 +437,6 @@ public class PlayerMovement : MonoBehaviour
         }
 
         return direction;
-    }
-
-    public void inputLeft()
-    {
-        direction += Vector2.left;
-    }
-
-    public void inputRigth()
-    {
-        direction += Vector2.right;
     }
 
     private AttackType AttackInput()

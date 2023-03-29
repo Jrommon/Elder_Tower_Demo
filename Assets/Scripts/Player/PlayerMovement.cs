@@ -50,6 +50,9 @@ public class PlayerMovement : MonoBehaviour
     private readonly int _jumpingAnimatorParameter = Animator.StringToHash("Jumping");
     private readonly int _fallingAnimatorParameter = Animator.StringToHash("Falling");
     private readonly int _attackAnimatorParameter = Animator.StringToHash("Attack");
+    
+    //Phone port variables
+    Vector2 direction = Vector2.zero;
 
     public bool JumpPowerUp
     {
@@ -362,7 +365,6 @@ public class PlayerMovement : MonoBehaviour
 
     private Vector2 ManageMovementInputs()
     {
-        Vector2 direction = Vector2.zero;
         if (Input.GetKey(KeyCode.W))
         {
             direction += Vector2.up;
@@ -386,23 +388,30 @@ public class PlayerMovement : MonoBehaviour
         return direction;
     }
 
+    public void inputLeft()
+    {
+        direction += Vector2.left;
+    }
+
+    public void inputRigth()
+    {
+        direction += Vector2.right;
+    }
+
     private AttackType AttackInput()
     {
-        if (Input.GetMouseButton(0))
-            return AttackType.NORMAL;
+        //if (Input.GetMouseButton(0))
+        //    return AttackType.NORMAL;
         
 
-        if (Input.GetMouseButton(1))
-            return AttackType.HEAVY;
+        //if (Input.GetMouseButton(1))
+        //    return AttackType.HEAVY;
 
         if (Input.GetKey(KeyCode.E))
         {
             Debug.Log("Fireball");
             return AttackType.SECONDARY;
         }
-
-        
-
         return AttackType.NONE;
     }
     
@@ -440,4 +449,3 @@ public class PlayerMovement : MonoBehaviour
         SECONDARY
     }
 }
-

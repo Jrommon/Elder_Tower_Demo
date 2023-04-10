@@ -46,9 +46,36 @@ public partial class @Inputs : IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Attack"",
+                    ""name"": ""LightAttack"",
                     ""type"": ""Button"",
                     ""id"": ""9ff1b630-16bd-43a8-8139-cd1d1fe35627"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""HeavyAttack"",
+                    ""type"": ""Button"",
+                    ""id"": ""46b271cd-802a-4d96-98d0-edc3336f16b1"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""SecondaryAttack"",
+                    ""type"": ""Button"",
+                    ""id"": ""e46cfb00-9da0-44b2-88e4-d7fa6fa8d7c8"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""SwitchAttack"",
+                    ""type"": ""Button"",
+                    ""id"": ""d8a0ec72-7758-4510-a941-ac085ecf6378"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -107,40 +134,40 @@ public partial class @Inputs : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Attack"",
+                    ""action"": ""LightAttack"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""f438cd76-22e6-47b9-9d47-bfd4289f9650"",
-                    ""path"": ""<Gamepad>/buttonNorth"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Attack"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""e25df28f-2d55-4531-a38a-97ea610374de"",
-                    ""path"": ""<Gamepad>/buttonEast"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Attack"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""f64cd112-31a0-4e17-b02b-527723c0c7db"",
+                    ""id"": ""dc548b3b-b674-424a-a84d-ab7b28f49b1c"",
                     ""path"": ""<Gamepad>/buttonWest"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Attack"",
+                    ""action"": ""HeavyAttack"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""986b88a8-ff09-4035-8ae1-7848678b8822"",
+                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""SecondaryAttack"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""4a8f3f88-9310-4338-9829-8c1636c5573a"",
+                    ""path"": ""<Gamepad>/buttonNorth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""SwitchAttack"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -153,7 +180,10 @@ public partial class @Inputs : IInputActionCollection2, IDisposable
         m_Game = asset.FindActionMap("Game", throwIfNotFound: true);
         m_Game_Movement = m_Game.FindAction("Movement", throwIfNotFound: true);
         m_Game_Jump = m_Game.FindAction("Jump", throwIfNotFound: true);
-        m_Game_Attack = m_Game.FindAction("Attack", throwIfNotFound: true);
+        m_Game_LightAttack = m_Game.FindAction("LightAttack", throwIfNotFound: true);
+        m_Game_HeavyAttack = m_Game.FindAction("HeavyAttack", throwIfNotFound: true);
+        m_Game_SecondaryAttack = m_Game.FindAction("SecondaryAttack", throwIfNotFound: true);
+        m_Game_SwitchAttack = m_Game.FindAction("SwitchAttack", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -215,14 +245,20 @@ public partial class @Inputs : IInputActionCollection2, IDisposable
     private IGameActions m_GameActionsCallbackInterface;
     private readonly InputAction m_Game_Movement;
     private readonly InputAction m_Game_Jump;
-    private readonly InputAction m_Game_Attack;
+    private readonly InputAction m_Game_LightAttack;
+    private readonly InputAction m_Game_HeavyAttack;
+    private readonly InputAction m_Game_SecondaryAttack;
+    private readonly InputAction m_Game_SwitchAttack;
     public struct GameActions
     {
         private @Inputs m_Wrapper;
         public GameActions(@Inputs wrapper) { m_Wrapper = wrapper; }
         public InputAction @Movement => m_Wrapper.m_Game_Movement;
         public InputAction @Jump => m_Wrapper.m_Game_Jump;
-        public InputAction @Attack => m_Wrapper.m_Game_Attack;
+        public InputAction @LightAttack => m_Wrapper.m_Game_LightAttack;
+        public InputAction @HeavyAttack => m_Wrapper.m_Game_HeavyAttack;
+        public InputAction @SecondaryAttack => m_Wrapper.m_Game_SecondaryAttack;
+        public InputAction @SwitchAttack => m_Wrapper.m_Game_SwitchAttack;
         public InputActionMap Get() { return m_Wrapper.m_Game; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -238,9 +274,18 @@ public partial class @Inputs : IInputActionCollection2, IDisposable
                 @Jump.started -= m_Wrapper.m_GameActionsCallbackInterface.OnJump;
                 @Jump.performed -= m_Wrapper.m_GameActionsCallbackInterface.OnJump;
                 @Jump.canceled -= m_Wrapper.m_GameActionsCallbackInterface.OnJump;
-                @Attack.started -= m_Wrapper.m_GameActionsCallbackInterface.OnAttack;
-                @Attack.performed -= m_Wrapper.m_GameActionsCallbackInterface.OnAttack;
-                @Attack.canceled -= m_Wrapper.m_GameActionsCallbackInterface.OnAttack;
+                @LightAttack.started -= m_Wrapper.m_GameActionsCallbackInterface.OnLightAttack;
+                @LightAttack.performed -= m_Wrapper.m_GameActionsCallbackInterface.OnLightAttack;
+                @LightAttack.canceled -= m_Wrapper.m_GameActionsCallbackInterface.OnLightAttack;
+                @HeavyAttack.started -= m_Wrapper.m_GameActionsCallbackInterface.OnHeavyAttack;
+                @HeavyAttack.performed -= m_Wrapper.m_GameActionsCallbackInterface.OnHeavyAttack;
+                @HeavyAttack.canceled -= m_Wrapper.m_GameActionsCallbackInterface.OnHeavyAttack;
+                @SecondaryAttack.started -= m_Wrapper.m_GameActionsCallbackInterface.OnSecondaryAttack;
+                @SecondaryAttack.performed -= m_Wrapper.m_GameActionsCallbackInterface.OnSecondaryAttack;
+                @SecondaryAttack.canceled -= m_Wrapper.m_GameActionsCallbackInterface.OnSecondaryAttack;
+                @SwitchAttack.started -= m_Wrapper.m_GameActionsCallbackInterface.OnSwitchAttack;
+                @SwitchAttack.performed -= m_Wrapper.m_GameActionsCallbackInterface.OnSwitchAttack;
+                @SwitchAttack.canceled -= m_Wrapper.m_GameActionsCallbackInterface.OnSwitchAttack;
             }
             m_Wrapper.m_GameActionsCallbackInterface = instance;
             if (instance != null)
@@ -251,9 +296,18 @@ public partial class @Inputs : IInputActionCollection2, IDisposable
                 @Jump.started += instance.OnJump;
                 @Jump.performed += instance.OnJump;
                 @Jump.canceled += instance.OnJump;
-                @Attack.started += instance.OnAttack;
-                @Attack.performed += instance.OnAttack;
-                @Attack.canceled += instance.OnAttack;
+                @LightAttack.started += instance.OnLightAttack;
+                @LightAttack.performed += instance.OnLightAttack;
+                @LightAttack.canceled += instance.OnLightAttack;
+                @HeavyAttack.started += instance.OnHeavyAttack;
+                @HeavyAttack.performed += instance.OnHeavyAttack;
+                @HeavyAttack.canceled += instance.OnHeavyAttack;
+                @SecondaryAttack.started += instance.OnSecondaryAttack;
+                @SecondaryAttack.performed += instance.OnSecondaryAttack;
+                @SecondaryAttack.canceled += instance.OnSecondaryAttack;
+                @SwitchAttack.started += instance.OnSwitchAttack;
+                @SwitchAttack.performed += instance.OnSwitchAttack;
+                @SwitchAttack.canceled += instance.OnSwitchAttack;
             }
         }
     }
@@ -262,6 +316,9 @@ public partial class @Inputs : IInputActionCollection2, IDisposable
     {
         void OnMovement(InputAction.CallbackContext context);
         void OnJump(InputAction.CallbackContext context);
-        void OnAttack(InputAction.CallbackContext context);
+        void OnLightAttack(InputAction.CallbackContext context);
+        void OnHeavyAttack(InputAction.CallbackContext context);
+        void OnSecondaryAttack(InputAction.CallbackContext context);
+        void OnSwitchAttack(InputAction.CallbackContext context);
     }
 }

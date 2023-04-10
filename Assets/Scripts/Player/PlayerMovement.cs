@@ -58,6 +58,8 @@ public class PlayerMovement : MonoBehaviour
     
     //Phone port variables
     Vector2 direction = Vector2.zero;
+    
+    AttackType attackType = AttackType.NONE;
 
     public bool JumpPowerUp
     {
@@ -84,6 +86,14 @@ public class PlayerMovement : MonoBehaviour
         _inputs.Game.Movement.performed += OnMovePerform;
         _inputs.Game.Movement.canceled += OnMoveCancell;
         _inputs.Game.Jump.performed += OnJumpPerform;
+        _inputs.Game.LightAttack.performed += OnAttackPerform;
+        _inputs.Game.LightAttack.canceled += OnAttackCancell;
+        _inputs.Game.HeavyAttack.performed += OnSecondaryAttackPerform;
+        _inputs.Game.HeavyAttack.canceled += OnSecondaryAttackCancell;
+        _inputs.Game.SecondaryAttack.performed += OnMagicAttackPerform;
+        _inputs.Game.SecondaryAttack.canceled += OnMagicAttackCancell;
+        _inputs.Game.SwitchAttack.performed += OnSwitchAttackPerform;
+        
     }
 
     private void OnDisable()
@@ -117,6 +127,41 @@ public class PlayerMovement : MonoBehaviour
         _jump = false;
 
     }
+    
+    private void OnAttackPerform(InputAction.CallbackContext value)
+    {
+        attackType = AttackType.NORMAL;
+    }
+    
+    private void OnAttackCancell(InputAction.CallbackContext value)
+    {
+        attackType = AttackType.NONE;
+    }
+    
+    private void OnSecondaryAttackPerform(InputAction.CallbackContext value)
+    {
+        attackType = AttackType.HEAVY;
+    }
+    
+    private void OnSecondaryAttackCancell(InputAction.CallbackContext value)
+    {
+        attackType = AttackType.NONE;
+    }
+    
+    private void OnMagicAttackPerform(InputAction.CallbackContext value)
+    {
+        attackType = AttackType.SECONDARY;
+    }
+    
+    private void OnMagicAttackCancell(InputAction.CallbackContext value)
+    {
+        attackType = AttackType.NONE;
+    }
+    
+    private void OnSwitchAttackPerform(InputAction.CallbackContext value)
+    {
+        ToggleAttack();
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -143,7 +188,7 @@ public class PlayerMovement : MonoBehaviour
         magicReadyIndicator.enabled = _magicReady;
         weaponsReadyIndicator.sprite = _isMele ? sword : magic;
         
-        AttackType attackType = AttackInput();
+//        AttackType attackType = AttackInput();
         if (Input.GetMouseButtonDown(2))
                 ToggleAttack();
 

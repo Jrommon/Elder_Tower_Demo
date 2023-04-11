@@ -84,14 +84,14 @@ public class PlayerMovement : MonoBehaviour
     {
         _inputs.Enable();
         _inputs.Game.Movement.performed += OnMovePerform;
-        _inputs.Game.Movement.canceled += OnMoveCancell;
+        _inputs.Game.Movement.canceled += OnMoveCancel;
         _inputs.Game.Jump.performed += OnJumpPerform;
         _inputs.Game.LightAttack.performed += OnAttackPerform;
-        _inputs.Game.LightAttack.canceled += OnAttackCancell;
+        _inputs.Game.LightAttack.canceled += OnAttackCancel;
         _inputs.Game.HeavyAttack.performed += OnSecondaryAttackPerform;
-        _inputs.Game.HeavyAttack.canceled += OnSecondaryAttackCancell;
+        _inputs.Game.HeavyAttack.canceled += OnSecondaryAttackCancel;
         _inputs.Game.SecondaryAttack.performed += OnMagicAttackPerform;
-        _inputs.Game.SecondaryAttack.canceled += OnMagicAttackCancell;
+        _inputs.Game.SecondaryAttack.canceled += OnMagicAttackCancel;
         _inputs.Game.SwitchAttack.performed += OnSwitchAttackPerform;
         
     }
@@ -99,8 +99,8 @@ public class PlayerMovement : MonoBehaviour
     private void OnDisable()
     {
         _inputs.Game.Movement.performed -= OnMovePerform;
-        _inputs.Game.Movement.canceled -= OnMoveCancell;
-        _inputs.Game.Jump.performed -= OnJumpCancell;
+        _inputs.Game.Movement.canceled -= OnMoveCancel;
+        _inputs.Game.Jump.performed -= OnJumpCancel;
         _inputs.Disable();
     }
 
@@ -111,7 +111,7 @@ public class PlayerMovement : MonoBehaviour
         direction = new Vector2(dir, direction.y);
     }
 
-    private void OnMoveCancell(InputAction.CallbackContext value)
+    private void OnMoveCancel(InputAction.CallbackContext value)
     {
         direction = Vector2.zero;
     }
@@ -122,7 +122,7 @@ public class PlayerMovement : MonoBehaviour
 
     }
     
-    private void OnJumpCancell(InputAction.CallbackContext value)
+    private void OnJumpCancel(InputAction.CallbackContext value)
     {
         _jump = false;
 
@@ -133,7 +133,7 @@ public class PlayerMovement : MonoBehaviour
         attackType = AttackType.NORMAL;
     }
     
-    private void OnAttackCancell(InputAction.CallbackContext value)
+    private void OnAttackCancel(InputAction.CallbackContext value)
     {
         attackType = AttackType.NONE;
     }
@@ -143,7 +143,7 @@ public class PlayerMovement : MonoBehaviour
         attackType = AttackType.HEAVY;
     }
     
-    private void OnSecondaryAttackCancell(InputAction.CallbackContext value)
+    private void OnSecondaryAttackCancel(InputAction.CallbackContext value)
     {
         attackType = AttackType.NONE;
     }
@@ -153,7 +153,7 @@ public class PlayerMovement : MonoBehaviour
         attackType = AttackType.SECONDARY;
     }
     
-    private void OnMagicAttackCancell(InputAction.CallbackContext value)
+    private void OnMagicAttackCancel(InputAction.CallbackContext value)
     {
         attackType = AttackType.NONE;
     }
@@ -164,7 +164,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         _rigidbody2D.isKinematic = false;
 
@@ -173,7 +173,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         print(_jumpNumber);
         

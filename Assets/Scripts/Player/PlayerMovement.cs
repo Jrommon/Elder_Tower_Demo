@@ -175,9 +175,6 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        print(_jumpNumber);
-        
-        Vector2 directionMovement = Vector3.zero;
         _animator.SetBool(_walkingAnimatorParameter, false);
         _animator.SetBool(_jumpingAnimatorParameter, false);
         _animator.SetBool(_fallingAnimatorParameter, false);
@@ -213,9 +210,9 @@ public class PlayerMovement : MonoBehaviour
 
                 
                 // Update direction if can move
-                if(health >0)
+                if(health > 0)
                 {
-                    directionMovement = ManageMovementInputs().normalized;
+                    var directionMovement = ManageMovementInputs().normalized;
 
                     if (directionMovement.x != 0)
                     {

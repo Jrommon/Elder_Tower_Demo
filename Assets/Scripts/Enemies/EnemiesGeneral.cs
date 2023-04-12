@@ -15,7 +15,8 @@ public class EnemiesGeneral : MonoBehaviour
     [SerializeField] protected Rigidbody2D _rigidbody;
     [SerializeField] protected SpriteRenderer _spriteRenderer;
     [SerializeField] protected Animator _animator;
-
+    //Objetivo del look at target
+    [SerializeField] protected Transform target;
 
 
     private void Update()
@@ -26,6 +27,17 @@ public class EnemiesGeneral : MonoBehaviour
         }
     }
 
+    public void lookAtTarget()
+    {
+        if (target.position.x > transform.position.x)
+        {
+            transform.rotation = new Quaternion(transform.rotation.x, 0, transform.rotation.z, 0);
+        }
+        else
+        {
+            transform.rotation = new Quaternion(transform.rotation.x, 180, transform.rotation.z, 0);
+        }
+    }
     public void die()
     {
         Destroy(gameObject);

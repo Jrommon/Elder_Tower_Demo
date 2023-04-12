@@ -12,8 +12,7 @@ public class Plant : EnemiesGeneral
     [SerializeField] private float secondsToShoot=3;
     //Objeto disparado
     [SerializeField] private GameObject bullet;
-    //Objetivo del look at target
-    [SerializeField] private Transform target;
+    
 
     //Tiempo transcurrido entre disparos
     private float secondsTillShoot;
@@ -54,16 +53,6 @@ public class Plant : EnemiesGeneral
     }
 
     //Hace que mire a un objetivo
-    private void lookAtTarget()
-    {
-        if(target.position.x > transform.position.x)
-        {
-            transform.rotation = new Quaternion(transform.rotation.x, 180, transform.rotation.z,0);
-        }
-        else
-        {
-            transform.rotation = new Quaternion(transform.rotation.x, 0, transform.rotation.z, 0);
-        }
-    }
+    
     
 }

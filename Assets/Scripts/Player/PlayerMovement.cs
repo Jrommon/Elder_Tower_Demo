@@ -107,7 +107,7 @@ public class PlayerMovement : MonoBehaviour
     private void OnMovePerform(InputAction.CallbackContext value)
     {
         var dir = value.ReadValue<float>();
-        print(dir);
+        print("La direccion es: " + dir);
         direction = new Vector2(dir, direction.y);
     }
 
@@ -119,7 +119,6 @@ public class PlayerMovement : MonoBehaviour
     private void OnJumpPerform(InputAction.CallbackContext value)
     {
         _jump = value.performed;
-
     }
     
     private void OnJumpCancel(InputAction.CallbackContext value)
@@ -362,6 +361,7 @@ public class PlayerMovement : MonoBehaviour
 
                 break;
         }
+        //attackType = AttackType.NONE;
     }
 
     private void OnCollisionEnter2D(Collision2D col)

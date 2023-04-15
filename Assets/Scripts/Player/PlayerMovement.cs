@@ -9,8 +9,9 @@ using UnityEngine.Serialization;
 [RequireComponent(typeof(Rigidbody2D), typeof(BoxCollider2D))]
 public class PlayerMovement : MonoBehaviour
 {
-
     private Inputs _inputs;
+    
+    [SerializeField] private UGS_Analytics analytics;
     
     [SerializeField] private GameObject fireBallAttack, thunderAttack;
     [SerializeField] private Transform magicAttackPosition;
@@ -307,6 +308,7 @@ public class PlayerMovement : MonoBehaviour
                 switch (attackType)
                 {
                     case AttackType.NORMAL:
+                        analytics.PLayerAttack(_isMele);
                         if (_isMele)
                         {
                             _animator.SetInteger(_attackTypeAnimatorParameter, 1);
@@ -322,6 +324,7 @@ public class PlayerMovement : MonoBehaviour
                         break;
                     
                     case AttackType.HEAVY:
+                        analytics.PLayerAttack(_isMele);
                         if (_isMele)
                         {
                             _animator.SetInteger(_attackTypeAnimatorParameter, 2);
@@ -339,6 +342,7 @@ public class PlayerMovement : MonoBehaviour
                         break;
                     
                     case AttackType.SECONDARY:
+                        analytics.PLayerAttack(_isMele);
                         if (_isMele)
                         {
                             _animator.SetInteger(_attackTypeAnimatorParameter, 3);
@@ -366,17 +370,19 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D col)
     {
+        string attacker = col.gameObject.name;
+        
         if (col.collider.CompareTag("Void"))
         {
-            substractHealth(health);
+            substractHealth(health, attacker);
         }
         else if (col.collider.CompareTag("Enemy"))
         {
-            substractHealth(1);
+            substractHealth(1, attacker);
         }
     }
 
-    private void substractHealth(int healthTaken)
+    private void substractHealth(int healthTaken, string attacker)
     {
         health -= healthTaken;
 
@@ -391,6 +397,7 @@ public class PlayerMovement : MonoBehaviour
         if (health <= 0)
         {
             _animator.Play("Player_Dead");
+            analytics.PlayerDeath(attacker, this.transform.position.x);
         }
         else
         {

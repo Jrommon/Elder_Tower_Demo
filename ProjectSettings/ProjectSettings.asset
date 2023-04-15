@@ -833,7 +833,12 @@ PlayerSettings:
   XboxOneOverrideIdentityPublisher: 
   vrEditorSettings: {}
   cloudServicesEnabled:
-    Unity Ads: 1
+    Build: 0
+    Collab: 0
+    Game Performance: 0
+    Purchasing: 0
+    UDP: 0
+    Unity Ads: 0
   luminIcon:
     m_Name: 
     m_ModelFolderPath: 
@@ -847,11 +852,11 @@ PlayerSettings:
     m_VersionName: 
   apiCompatibilityLevel: 6
   activeInputHandler: 2
-  cloudProjectId: 68397960-7e09-47a0-b207-14f51cbea1a2
+  cloudProjectId: 6e3ff280-6c35-4e66-94e8-119db37bd764
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
   projectName: Elder_Tower_Demo
-  organizationId: juanmanuelr
+  organizationId: jrommon
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   playerDataPath: 

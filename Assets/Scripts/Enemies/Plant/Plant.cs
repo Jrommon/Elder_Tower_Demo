@@ -15,6 +15,7 @@ public class Plant : EnemiesGeneral
     //Objetivo del look at target
     [SerializeField] private Transform target;
 
+    private string bulletName = "Plant bullet";
     //Tiempo transcurrido entre disparos
     private float secondsTillShoot;
 
@@ -41,7 +42,8 @@ public class Plant : EnemiesGeneral
     //Instancia  una bala, se ejecuta al final de la animaci�n
     public void shoot()
     {
-        Instantiate(bullet, transform.position, transform.rotation);
+        GameObject projectile = Instantiate(bullet, transform.position, transform.rotation);
+        projectile.gameObject.name = bulletName;
     }
 
     //Hace una animaci�n de ataque a melee cuando colisiona con el player

@@ -1,0 +1,696 @@
+fileFormatVersion: 2
+guid: 8a2078caf72067448abf83eca86280f6
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 25
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Mobile - Senran no Samurai Kingdom JPN - Masanori Fukushima_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 290
+        width: 88
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31b09444899afd743a70ecd6fd0339ec
+      internalID: -1699080993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Senran no Samurai Kingdom JPN - Masanori Fukushima_2
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 291
+        width: 94
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b89265d95ab1d8246951d71f631d1f6a
+      internalID: 965365010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Senran no Samurai Kingdom JPN - Masanori Fukushima_4
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 291
+        width: 93
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee5f3484dba75244da7254557808d032
+      internalID: -640583907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Senran no Samurai Kingdom JPN - Masanori Fukushima_6
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 290
+        width: 90
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e54c45f93ed07c4ab41ae8247135b41
+      internalID: 1693190313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Senran no Samurai Kingdom JPN - Masanori Fukushima_8
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 300
+        width: 75
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a9dedcc62c37fb4885e5f5fea35b942
+      internalID: 1875484021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Senran no Samurai Kingdom JPN - Masanori Fukushima_10
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 296
+        width: 104
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b413146ecd08d204e9c430f9d84822e9
+      internalID: 1477515864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Senran no Samurai Kingdom JPN - Masanori Fukushima_11
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 292
+        width: 105
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f2487e1f306ec741a35f945b3928eaa
+      internalID: -652070999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Senran no Samurai Kingdom JPN - Masanori Fukushima_12
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 291
+        width: 108
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb2dde37b6ba8f54d9e50a8352ea2810
+      internalID: -827184160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Senran no Samurai Kingdom JPN - Masanori Fukushima_16
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 180
+        width: 105
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eb9d9691472eaf4385f15c38fc9000b
+      internalID: 1580230994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Senran no Samurai Kingdom JPN - Masanori Fukushima_17
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 180
+        width: 87
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9667ed186ccbadd40becd8bcfa7f2b88
+      internalID: -1901283276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Senran no Samurai Kingdom JPN - Masanori Fukushima_18
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 180
+        width: 112
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d36a124c56211c49bf089c5492aec32
+      internalID: 160894404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Senran no Samurai Kingdom JPN - Masanori Fukushima_19
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 197
+        width: 89
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45c0402970a1aa540b5dcdde24d8b949
+      internalID: 2125197737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Senran no Samurai Kingdom JPN - Masanori Fukushima_20
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 193
+        width: 89
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c1716d6cabd8964a981a0dfaff824f4
+      internalID: -1190089556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Senran no Samurai Kingdom JPN - Masanori Fukushima_21
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 197
+        width: 89
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad1051cc0337b6a4d80b5e2460022055
+      internalID: 310162765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Senran no Samurai Kingdom JPN - Masanori Fukushima_22
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 166
+        width: 89
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f0c42d5cf9cf274fa72b4dcd3844b83
+      internalID: -1453061433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Senran no Samurai Kingdom JPN - Masanori Fukushima_24
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 175
+        width: 73
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9b2f312cebda944c85404d3b55483ce
+      internalID: -2020302168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Senran no Samurai Kingdom JPN - Masanori Fukushima_25
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 53
+        width: 89
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33cdc0a0d5a615949b1e8bfc27c1481f
+      internalID: -916059955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Senran no Samurai Kingdom JPN - Masanori Fukushima_26
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 53
+        width: 89
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81490d58c5e31b546a0a14c590b29db1
+      internalID: 1072392451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Senran no Samurai Kingdom JPN - Masanori Fukushima_27
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 52
+        width: 89
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb9c64ec513ed8542af7f0498a21bd81
+      internalID: 326231528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Senran no Samurai Kingdom JPN - Masanori Fukushima_28
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 53
+        width: 89
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90e97ca3aa3fae14d85b4a895f961708
+      internalID: -1535930445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Senran no Samurai Kingdom JPN - Masanori Fukushima_29
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 53
+        width: 89
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d40b85356be8544185beb8757cc5e72
+      internalID: 811308525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Senran no Samurai Kingdom JPN - Masanori Fukushima_30
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 52
+        width: 89
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b48d76a1bab3e2846a10cea1e3712322
+      internalID: -128605772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Senran no Samurai Kingdom JPN - Masanori Fukushima_31
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 57
+        width: 89
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42e56d4efafc4b249bd1bb9f483c35e8
+      internalID: -407758390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Senran no Samurai Kingdom JPN - Masanori Fukushima_32
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 77
+        width: 89
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31d7fee1071f2e64bae5adc5fba28188
+      internalID: 1109689871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Mobile - Senran no Samurai Kingdom JPN - Masanori Fukushima_3: -1675824305
+      Mobile - Senran no Samurai Kingdom JPN - Masanori Fukushima_20: -1190089556
+      Mobile - Senran no Samurai Kingdom JPN - Masanori Fukushima_7: -58403301
+      Mobile - Senran no Samurai Kingdom JPN - Masanori Fukushima_8: 1875484021
+      Mobile - Senran no Samurai Kingdom JPN - Masanori Fukushima_6: 1693190313
+      Mobile - Senran no Samurai Kingdom JPN - Masanori Fukushima_0: -1699080993
+      Mobile - Senran no Samurai Kingdom JPN - Masanori Fukushima_1: -1003529316
+      Mobile - Senran no Samurai Kingdom JPN - Masanori Fukushima_32: 1109689871
+      Mobile - Senran no Samurai Kingdom JPN - Masanori Fukushima_2: 965365010
+      Mobile - Senran no Samurai Kingdom JPN - Masanori Fukushima_25: -916059955
+      Mobile - Senran no Samurai Kingdom JPN - Masanori Fukushima_9: 162354447
+      Mobile - Senran no Samurai Kingdom JPN - Masanori Fukushima_21: 310162765
+      Mobile - Senran no Samurai Kingdom JPN - Masanori Fukushima_27: 326231528
+      Mobile - Senran no Samurai Kingdom JPN - Masanori Fukushima_12: -827184160
+      Mobile - Senran no Samurai Kingdom JPN - Masanori Fukushima_13: -379613368
+      Mobile - Senran no Samurai Kingdom JPN - Masanori Fukushima_19: 2125197737
+      Mobile - Senran no Samurai Kingdom JPN - Masanori Fukushima_11: -652070999
+      Mobile - Senran no Samurai Kingdom JPN - Masanori Fukushima_26: 1072392451
+      Mobile - Senran no Samurai Kingdom JPN - Masanori Fukushima_31: -407758390
+      Mobile - Senran no Samurai Kingdom JPN - Masanori Fukushima_23: -462059875
+      Mobile - Senran no Samurai Kingdom JPN - Masanori Fukushima_29: 811308525
+      Mobile - Senran no Samurai Kingdom JPN - Masanori Fukushima_15: -1216885886
+      Mobile - Senran no Samurai Kingdom JPN - Masanori Fukushima_22: -1453061433
+      Mobile - Senran no Samurai Kingdom JPN - Masanori Fukushima_28: -1535930445
+      Mobile - Senran no Samurai Kingdom JPN - Masanori Fukushima_16: 1580230994
+      Mobile - Senran no Samurai Kingdom JPN - Masanori Fukushima_5: 1095309773
+      Mobile - Senran no Samurai Kingdom JPN - Masanori Fukushima_4: -640583907
+      Mobile - Senran no Samurai Kingdom JPN - Masanori Fukushima_17: -1901283276
+      Mobile - Senran no Samurai Kingdom JPN - Masanori Fukushima_10: 1477515864
+      Mobile - Senran no Samurai Kingdom JPN - Masanori Fukushima_30: -128605772
+      Mobile - Senran no Samurai Kingdom JPN - Masanori Fukushima_18: 160894404
+      Mobile - Senran no Samurai Kingdom JPN - Masanori Fukushima_14: 18925578
+      Mobile - Senran no Samurai Kingdom JPN - Masanori Fukushima_24: -2020302168
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

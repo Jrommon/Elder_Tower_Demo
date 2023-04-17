@@ -3,11 +3,15 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.Serialization;
 
 [RequireComponent(typeof(Rigidbody2D), typeof(BoxCollider2D))]
 public class PlayerMovement : MonoBehaviour
 {
+
+    private Inputs _inputs;
+    
     [SerializeField] private GameObject fireBallAttack, thunderAttack;
     [SerializeField] private Transform magicAttackPosition;
     [SerializeField] private Transform respawnPosition;
@@ -28,9 +32,10 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 _directionLooking = Vector2.right;
     [SerializeField]private bool _jumpPowerUp;
     [SerializeField] private bool _doubleJump;
-    private int jumpNumber = 0;
+    private int _jumpNumber = 0;
     private bool _magicReady = true;
     private bool _isMele = true;
+    private bool _jump;
 
     private Rigidbody2D _rigidbody2D;
     private Animator _animator;
@@ -48,7 +53,13 @@ public class PlayerMovement : MonoBehaviour
     private readonly int _isDeadAnimatorParameter = Animator.StringToHash("IsDead");
     private readonly int _hitAnimatorParameter = Animator.StringToHash("Hit");
     private readonly int _jumpingAnimatorParameter = Animator.StringToHash("Jumping");
+    private readonly int _fallingAnimatorParameter = Animator.StringToHash("Falling");
     private readonly int _attackAnimatorParameter = Animator.StringToHash("Attack");
+    
+    //Phone port variables
+    Vector2 direction = Vector2.zero;
+    
+    AttackType attackType = AttackType.NONE;
 
     public bool JumpPowerUp
     {
@@ -58,6 +69,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Awake()
     {
+        _inputs = new Inputs();
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
         _scale = transform.localScale;
@@ -68,8 +80,91 @@ public class PlayerMovement : MonoBehaviour
         _meleHeavyAttackHitbox2 = transform.GetChild(3).gameObject;
     }
 
+    private void OnEnable()
+    {
+        _inputs.Enable();
+        _inputs.Game.Movement.performed += OnMovePerform;
+        _inputs.Game.Movement.canceled += OnMoveCancel;
+        _inputs.Game.Jump.performed += OnJumpPerform;
+        _inputs.Game.LightAttack.performed += OnAttackPerform;
+        _inputs.Game.LightAttack.canceled += OnAttackCancel;
+        _inputs.Game.HeavyAttack.performed += OnSecondaryAttackPerform;
+        _inputs.Game.HeavyAttack.canceled += OnSecondaryAttackCancel;
+        _inputs.Game.SecondaryAttack.performed += OnMagicAttackPerform;
+        _inputs.Game.SecondaryAttack.canceled += OnMagicAttackCancel;
+        _inputs.Game.SwitchAttack.performed += OnSwitchAttackPerform;
+        
+    }
+
+    private void OnDisable()
+    {
+        _inputs.Game.Movement.performed -= OnMovePerform;
+        _inputs.Game.Movement.canceled -= OnMoveCancel;
+        _inputs.Game.Jump.performed -= OnJumpCancel;
+        _inputs.Disable();
+    }
+
+    private void OnMovePerform(InputAction.CallbackContext value)
+    {
+        var dir = value.ReadValue<float>();
+        print(dir);
+        direction = new Vector2(dir, direction.y);
+    }
+
+    private void OnMoveCancel(InputAction.CallbackContext value)
+    {
+        direction = Vector2.zero;
+    }
+
+    private void OnJumpPerform(InputAction.CallbackContext value)
+    {
+        _jump = value.performed;
+
+    }
+    
+    private void OnJumpCancel(InputAction.CallbackContext value)
+    {
+        _jump = false;
+
+    }
+    
+    private void OnAttackPerform(InputAction.CallbackContext value)
+    {
+        attackType = AttackType.NORMAL;
+    }
+    
+    private void OnAttackCancel(InputAction.CallbackContext value)
+    {
+        attackType = AttackType.NONE;
+    }
+    
+    private void OnSecondaryAttackPerform(InputAction.CallbackContext value)
+    {
+        attackType = AttackType.HEAVY;
+    }
+    
+    private void OnSecondaryAttackCancel(InputAction.CallbackContext value)
+    {
+        attackType = AttackType.NONE;
+    }
+    
+    private void OnMagicAttackPerform(InputAction.CallbackContext value)
+    {
+        attackType = AttackType.SECONDARY;
+    }
+    
+    private void OnMagicAttackCancel(InputAction.CallbackContext value)
+    {
+        attackType = AttackType.NONE;
+    }
+    
+    private void OnSwitchAttackPerform(InputAction.CallbackContext value)
+    {
+        ToggleAttack();
+    }
+
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         _rigidbody2D.isKinematic = false;
 
@@ -78,24 +173,20 @@ public class PlayerMovement : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        Vector2 directionMovement = Vector3.zero;
         _animator.SetBool(_walkingAnimatorParameter, false);
         _animator.SetBool(_jumpingAnimatorParameter, false);
+        _animator.SetBool(_fallingAnimatorParameter, false);
         _animator.SetBool(_hitAnimatorParameter, false);
         _animator.SetBool(_isDeadAnimatorParameter, false);
         _animator.SetInteger(_attackTypeAnimatorParameter, 0);
 
-        // _animator.SetTrigger(_attackAnimatorParameter);
-
-        // _animator.SetInteger(_attackTypeAnimatorParameter, 0);
-
         magicReadyIndicator.enabled = _magicReady;
         weaponsReadyIndicator.sprite = _isMele ? sword : magic;
         
-        AttackType attackType = AttackInput();
-        if (Input.GetKeyDown(KeyCode.T)) 
+//        AttackType attackType = AttackInput();
+        if (Input.GetMouseButtonDown(2))
                 ToggleAttack();
 
         switch (_state)
@@ -119,9 +210,9 @@ public class PlayerMovement : MonoBehaviour
 
                 
                 // Update direction if can move
-                if(health >0)
+                if(health > 0)
                 {
-                    directionMovement = ManageMovementInputs().normalized;
+                    var directionMovement = ManageMovementInputs().normalized;
 
                     if (directionMovement.x != 0)
                     {
@@ -139,12 +230,23 @@ public class PlayerMovement : MonoBehaviour
                     }
 
                     // Jump
-                    if (Input.GetKeyDown(KeyCode.Space))
+                    // if (Input.GetKeyDown(KeyCode.Space))
+                    if (_jump)
                     {
-                        if (_movementState is MovementState.WALK or MovementState.STAND || _doubleJump)
+                        if (_movementState is MovementState.WALK or MovementState.STAND)
                             _movementState = MovementState.JUMP;
 
+                        if ((_movementState is MovementState.FALL or MovementState.JUMP) && _jumpPowerUp && _jumpNumber <= 1)
+                        {
+                            if (_jumpNumber == 1)
+                                _doubleJump = true;
+                            
+                            _movementState = MovementState.JUMP;
+                        }
+
                     }
+
+                    _jump = false;
 
                 }
                 
@@ -152,40 +254,47 @@ public class PlayerMovement : MonoBehaviour
                 switch (_movementState)
                 {
                     case MovementState.STAND:
-                        _doubleJump = _jumpPowerUp;
-                        jumpNumber = 0;
+                        _doubleJump = false;
+                        _jumpNumber = 0;
                         if (Input.GetKey(KeyCode.E))
                             _state = State.ATTACKING;
                         
                         
                         if (_rigidbody2D.velocity.y < 0)
-                        {
                             _movementState = MovementState.FALL;
-                        }
+                        
                         break;
 
                     case MovementState.FALL:
-                        _animator.SetBool(_jumpingAnimatorParameter, true);
+                        _animator.SetBool(_fallingAnimatorParameter, true);
 
-                        // Comprobar si esta sobre una superficie, sino se engancha en paredes.
+                        // Comprobar si esta sobre una superficie, si no se engancha en paredes.
                         if (_rigidbody2D.velocity.y == 0)
-                        {
                             _movementState = MovementState.STAND;
-
-                        }
-
+                        
                         break;
                     
                     case MovementState.JUMP:
-                        jumpNumber++;
-                        if (jumpNumber>1)
-                        {
-                            _doubleJump = false;
-                        }
                         _animator.SetBool(_jumpingAnimatorParameter, true);
-                        _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, 0);
-                        _rigidbody2D.velocity += new Vector2(0, jumpForce);
-                        _movementState = MovementState.FALL;
+                        switch (_jumpNumber)
+                        {
+                            case 0:
+                                _jumpNumber++;
+                                _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, 0);
+                                _rigidbody2D.velocity += new Vector2(0, jumpForce);
+                                break;
+                            
+                            case 1 when _doubleJump:
+                                _jumpNumber++;
+                                _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, 0);
+                                _rigidbody2D.velocity += new Vector2(0, jumpForce);
+                                break;
+                        }
+
+                        if (_rigidbody2D.velocity.y <= 0)
+                            _movementState = MovementState.FALL;
+
+                        
                         break;
 
                     default:
@@ -349,7 +458,6 @@ public class PlayerMovement : MonoBehaviour
 
     private Vector2 ManageMovementInputs()
     {
-        Vector2 direction = Vector2.zero;
         if (Input.GetKey(KeyCode.W))
         {
             direction += Vector2.up;
@@ -375,21 +483,18 @@ public class PlayerMovement : MonoBehaviour
 
     private AttackType AttackInput()
     {
-        if (Input.GetKey(KeyCode.E))
-            return AttackType.NORMAL;
+        //if (Input.GetMouseButton(0))
+        //    return AttackType.NORMAL;
         
 
-        if (Input.GetKey(KeyCode.R))
-            return AttackType.HEAVY;
+        //if (Input.GetMouseButton(1))
+        //    return AttackType.HEAVY;
 
-        if (Input.GetKey(KeyCode.F))
+        if (Input.GetKey(KeyCode.E))
         {
             Debug.Log("Fireball");
             return AttackType.SECONDARY;
         }
-
-        
-
         return AttackType.NONE;
     }
     
@@ -427,4 +532,3 @@ public class PlayerMovement : MonoBehaviour
         SECONDARY
     }
 }
-

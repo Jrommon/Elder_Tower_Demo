@@ -22,21 +22,22 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private SpriteRenderer magicReadyIndicator;
     [SerializeField] private SpriteRenderer weaponsReadyIndicator;
     [SerializeField] private Sprite sword, magic;
-    
-    [SerializeField] private float speed = 4, jumpForce = 5;
 
+    [SerializeField] private float speed = 4, jumpForce = 5;
+    [SerializeField]private bool _jumpPowerUp;
+    [SerializeField] private bool _doubleJump;
+    
     [Header("Life")] 
     [SerializeField] private int health = 3;
     
+    [Header("Ads")]
+    [SerializeField] private AdsInitializer ads;
+
     private State _state = State.IDLE;
     private MovementState _movementState = MovementState.STAND;
     private Vector2 _directionLooking = Vector2.right;
-    [SerializeField]private bool _jumpPowerUp;
-    [SerializeField] private bool _doubleJump;
     private int _jumpNumber = 0;
-    private bool _magicReady = true;
-    private bool _isMele = true;
-    private bool _jump;
+    private bool _magicReady = true, _isMele = true, _jump;
 
     private Rigidbody2D _rigidbody2D;
     private Animator _animator;
@@ -374,15 +375,15 @@ public class PlayerMovement : MonoBehaviour
         
         if (col.collider.CompareTag("Void"))
         {
-            substractHealth(health, attacker);
+            SubtractHealth(health, attacker);
         }
         else if (col.collider.CompareTag("Enemy"))
         {
-            substractHealth(1, attacker);
+            SubtractHealth(1, attacker);
         }
     }
 
-    private void substractHealth(int healthTaken, string attacker)
+    private void SubtractHealth(int healthTaken, string attacker)
     {
         health -= healthTaken;
 
@@ -397,6 +398,7 @@ public class PlayerMovement : MonoBehaviour
         if (health <= 0)
         {
             _animator.Play("Player_Dead");
+            ads.LoadInterstitial();
             analytics.PlayerDeath(attacker, this.transform.position.x);
         }
         else

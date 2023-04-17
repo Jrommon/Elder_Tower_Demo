@@ -9,8 +9,9 @@ using UnityEngine.Serialization;
 [RequireComponent(typeof(Rigidbody2D), typeof(BoxCollider2D))]
 public class PlayerMovement : MonoBehaviour
 {
-
     private Inputs _inputs;
+    
+    [SerializeField] private UGS_Analytics analytics;
     
     [SerializeField] private GameObject fireBallAttack, thunderAttack;
     [SerializeField] private Transform magicAttackPosition;
@@ -21,21 +22,22 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private SpriteRenderer magicReadyIndicator;
     [SerializeField] private SpriteRenderer weaponsReadyIndicator;
     [SerializeField] private Sprite sword, magic;
-    
-    [SerializeField] private float speed = 4, jumpForce = 5;
 
+    [SerializeField] private float speed = 4, jumpForce = 5;
+    [SerializeField]private bool _jumpPowerUp;
+    [SerializeField] private bool _doubleJump;
+    
     [Header("Life")] 
     [SerializeField] private int health = 3;
     
+    [Header("Ads")]
+    [SerializeField] private AdsInitializer ads;
+
     private State _state = State.IDLE;
     private MovementState _movementState = MovementState.STAND;
     private Vector2 _directionLooking = Vector2.right;
-    [SerializeField]private bool _jumpPowerUp;
-    [SerializeField] private bool _doubleJump;
     private int _jumpNumber = 0;
-    private bool _magicReady = true;
-    private bool _isMele = true;
-    private bool _jump;
+    private bool _magicReady = true, _isMele = true, _jump;
 
     private Rigidbody2D _rigidbody2D;
     private Animator _animator;
@@ -107,7 +109,7 @@ public class PlayerMovement : MonoBehaviour
     private void OnMovePerform(InputAction.CallbackContext value)
     {
         var dir = value.ReadValue<float>();
-        print(dir);
+        print("La direccion es: " + dir);
         direction = new Vector2(dir, direction.y);
     }
 
@@ -119,7 +121,6 @@ public class PlayerMovement : MonoBehaviour
     private void OnJumpPerform(InputAction.CallbackContext value)
     {
         _jump = value.performed;
-
     }
     
     private void OnJumpCancel(InputAction.CallbackContext value)
@@ -308,6 +309,7 @@ public class PlayerMovement : MonoBehaviour
                 switch (attackType)
                 {
                     case AttackType.NORMAL:
+                        analytics.PLayerAttack(_isMele);
                         if (_isMele)
                         {
                             _animator.SetInteger(_attackTypeAnimatorParameter, 1);
@@ -323,6 +325,7 @@ public class PlayerMovement : MonoBehaviour
                         break;
                     
                     case AttackType.HEAVY:
+                        analytics.PLayerAttack(_isMele);
                         if (_isMele)
                         {
                             _animator.SetInteger(_attackTypeAnimatorParameter, 2);
@@ -340,6 +343,7 @@ public class PlayerMovement : MonoBehaviour
                         break;
                     
                     case AttackType.SECONDARY:
+                        analytics.PLayerAttack(_isMele);
                         if (_isMele)
                         {
                             _animator.SetInteger(_attackTypeAnimatorParameter, 3);
@@ -362,21 +366,24 @@ public class PlayerMovement : MonoBehaviour
 
                 break;
         }
+        //attackType = AttackType.NONE;
     }
 
     private void OnCollisionEnter2D(Collision2D col)
     {
+        string attacker = col.gameObject.name;
+        
         if (col.collider.CompareTag("Void"))
         {
-            substractHealth(health);
+            SubtractHealth(health, attacker);
         }
         else if (col.collider.CompareTag("Enemy"))
         {
-            substractHealth(1);
+            SubtractHealth(1, attacker);
         }
     }
 
-    private void substractHealth(int healthTaken)
+    private void SubtractHealth(int healthTaken, string attacker)
     {
         health -= healthTaken;
 
@@ -391,6 +398,8 @@ public class PlayerMovement : MonoBehaviour
         if (health <= 0)
         {
             _animator.Play("Player_Dead");
+            ads.LoadInterstitial();
+            analytics.PlayerDeath(attacker, this.transform.position.x);
         }
         else
         {
